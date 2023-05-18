@@ -115,8 +115,9 @@ Disconnect the KF 25 hose from the roughing pump
 Note: You will hear a sound as the vacuum is broken in the hose  
 Now move the purification skid to wherever you will be doing the regeneration  
 Near the vent tubes in the lab is preferred  
-!Does the system still need to be disconnected and moved? It's set up in a place where it can ventilate currently
-Turn on the Turbo  
+!Does the system still need to be disconnected and moved? It's set up in a place where it can ventilate currently  
+Ensure the system is below 20 mtorr before turning on the Turbo pump. The blades are delicate and will be damaged if operated outside of a near vaccum.    
+The Turbo Pump is controlled by an independent voltage source. Flip the switch to turn on the pump.  
 You should hear a “whirring” sound as the blades spin up to 1500 Hz and takes ~3 mins to come all the way up to speed  
 Note: There are now blades spinning around 1500 times per second!  
 If the system were to suddenly be exposed to high pressure (atmosphere) or be shooken there is a risk that the vacuum could fail catastrophically (blow up)  
