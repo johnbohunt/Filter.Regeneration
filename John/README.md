@@ -103,6 +103,7 @@ Now we simply wait for some prescribed period of time
 12+ hours will be needed if the system has been used / open to the air  
 The system can be left “unattended” as long as you post on the group SLACK account in the “general” category letting people know that this is running and the heater tapes are on  
 No one should touch these heater tapes since they can get quite hot  
+!We may want to heat the system before we pull a vacuum, as it seems to be difficult to get the interior to our desired temperature without a medium between the tape on the outside and the catalyst on the inside, or at least it's difficult to get a reading on the interior thermocouple.  
 ### Turbo Evacuate the System  
 #### Time to Complete: 1-4 Hours  
 Since the this step and the next step will be where we actually start regenerating the filters, we will want to move the system to the location where it can vent the Argon/Hydrogen mixture out of the building  
@@ -248,6 +249,9 @@ If things get really crazy, close the bottle valve
 If the bottle runs out...see change over slides later (to be developed)  
 ##### Monitoring the Water, Oxygen, and Argon in the RGA  
 What you should see on the RGA:  !add photo
+##### Temperature
+!We're expecting a temperature spike when adding the Hydrogen/Argon mixture. It's likely this will need to be balanced as well.  
+The temperature needs to be at least 175 C and shouldn't exceed 225 C. Note that spikes as high as 300 C are okay as long as the temperature is maintained below 225 C. Refer to the Copper Catalyst reduction guidline [here](https://github.com/johnbohunt/Filter.Regeneration/blob/8888a869bf07075ab53d143642b467c4da9cf445/Alfredo/Filter.Guidelines/Reduction%20Guidelines%20for%20Copper%20Catalysts.pdf) for more details.  
 #### Waiting Game  
 Now we will let the filter regeneration happen!  
 We will want to monitor this closely over the first 2-3 hours and then less frequently later  
