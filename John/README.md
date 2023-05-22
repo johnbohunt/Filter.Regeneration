@@ -70,12 +70,14 @@ _!Photo of New Turbo Pump_
 - Roughing Pump  
 ![Roughing Pump](https://github.com/johnbohunt/Filter.Regeneration/blob/main/John/images/Roughing%20pump.jpg?raw=true)
 
-These two pumps shouldn't be used on the same volume at the same time, i.e. we want to avoid the two pumps pulling opposite ways on the same section of pipe. Our current system runs the pumps inline, with the roughing pump extracting the "exhaust" of the turbo pump when the turbo is running. This is fine since the two pumps aren't acting against each other on the same volume. However, if both pumps are running and V5 and V6 on the valve diagram are both open, they WILL be pulling against each other, which will heat the system and risk damaging the pumps. This is the sort of thing we want to avoid. _!add diagram for clarity_ 
+These two pumps shouldn't be used on the same volume at the same time, i.e. we want to avoid the two pumps pulling opposite ways on the same section of pipe. Our current system runs the pumps inline, with the roughing pump extracting the "exhaust" of the turbo pump when the turbo is running. This is fine since the two pumps aren't acting against each other on the same volume. However, if both pumps are running and V5 and V6 on the valve diagram are both open, they WILL be pulling against each other, which will heat the system and risk damaging the pumps. This is the sort of thing we want to avoid.  
+_!add diagram for clarity_  
 Connect the Filter system to the roughing pump if not connected  
-Should already be connected as shown in photo _!add photo_  
-At the time of writing, they can be connected via Kwik Flange (KF) 25 hose !verify  
-Close the valve nearest the roughing pump to isolate the roughing pump from everything else
-Make sure other systems hooked up are closed off as well (e.g. the selenium evaporator needs to be closed off here)  
+Should already be connected as shown in photo  
+_!add photo_  
+At the time of writing, they can be connected via Kwik Flange (KF) 25 hose _!verify_    
+Close the valve nearest the roughing pump to isolate the roughing pump from everything else  
+Make sure any other systems hooked up are closed off as well (e.g. the selenium evaporator needs to be closed off here)  
 The valve labeled SV1 (refer to valve diagram below) is a precision valve and should be handled VERY DELICATELY  
 ![Valve Diagram](https://github.com/johnbohunt/Filter.Regeneration/blob/main/Alfredo/Images/Diagram.png?raw=true)  
 Make sure this valve is also closed before pumping  
@@ -236,8 +238,8 @@ You will want to close the “bleed in valve” which separates the turbo pump f
 Next you will want to plug in the heater tapes for the filter material  
 You will not want to leave the system closed for long (> 30 mins) with the heater tapes on and the system isolated like this...so we will be moving fast through the next steps!  
 You will want to monitor the pressure gauge near the filters throughout the process  
-Now you will want to prepare the Residual Gas Analyzer system
-The RGA is very delicate. Only turn this on if the pressure reads < 10-4 torr on the ion gauge 
+Now you will want to prepare the Residual Gas Analyzer (RGA) system  
+The RGA is very delicate. Only turn this on if the pressure reads < 10-4 torr on the ion gauge  
 Turn on the RGA using the switch on the back  
 _!Photo of the RGA power switch_  
 Open the application by clicking on the highlighted icon “RGA”  
@@ -264,7 +266,7 @@ Argon, Water, and Oxygen are good places to start
 You can always type the element or specify the atomic mass  
 
 Be sure to check each channel as you add them  
-Now you can start the scan by pressing the “Go” button at the top
+Now you can start the scan by pressing the “Go” button at the top  
 The plot should start to populate with the measurement of these elements  
 We will be monitoring this plot  
 You can change the range of the “x” and “y” axis by going to the “Graph” menu and selecting “x-axis…” or “y-axis” and typing in the range you want  
@@ -281,7 +283,7 @@ Once the process has started you will want to closely monitor the pressure gauge
 This pressure should be below 700 torr  
 Once the flow has started, you will open the bleed in valve which allows the Ar/H to vent to the outside world  
 The vent will go up the chimney out of the lab  
-Initially you will only want to open this vale somewhere between ¼ and ⅓ of fully open  
+Initially you will only want to open this valve somewhere between ¼ and ⅓ of fully open  
 Please be careful when opening this valve  
 Be checking the pressure on the gauge nearest the filters  
 Once stable flow is established, we will want to flow in a small amount of Ar/H mixture which has passed through the filters and monitor the Water and Oxygen content  
