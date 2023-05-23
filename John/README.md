@@ -1,7 +1,7 @@
 # Filter.Regeneration
 Liquid Argon Filter Regeneration Process  
 [Instructions](https://github.com/johnbohunt/Filter.Regeneration/tree/main/John#instructions)
-## Pertinent Warnings  
+## Warnings  
 ### Evacuating the Vessel
 The "bleed in valve" is a percision valve should be handled very delicately and will need to be turned several times to open and close it all the way  
 When the screw is all the way at the bottom the valve is CLOSED  
@@ -60,19 +60,24 @@ Turn off the Motor pump
 Turn off the RGA  
 Shut off the Pumping Station  
   
+  ---
 ## Instructions  
 ### Evacuating the Vessel  
-There are two vacuum pumps we use to evacuate they system  
+There are two vacuum pumps we use to evacuate the system  
 
 - Turbo Pump  
+_!Photo of New Turbo Pump_   
 - Roughing Pump  
+![Roughing Pump](https://github.com/johnbohunt/Filter.Regeneration/blob/main/John/images/Roughing%20pump.jpg?raw=true)
 
-These two pumps shouldn't be used on the same volume at the same time, i.e. we want to avoid the two pumps pulling opposite ways on the same section of pipe. Our current system runs the pumps inline, with the roughing pump extracting the "exhaust" of the turbo pump when the turbo is running. This is fine since the two pumps aren't acting against each other on the same volume.  
+These two pumps shouldn't be used on the same volume at the same time, i.e. we want to avoid the two pumps pulling opposite ways on the same section of pipe. Our current system runs the pumps inline, with the roughing pump extracting the "exhaust" of the turbo pump when the turbo is running. This is fine since the two pumps aren't acting against each other on the same volume. However, if both pumps are running and V5 and V6 on the valve diagram are both open, they WILL be pulling against each other, which will heat the system and risk damaging the pumps. This is the sort of thing we want to avoid.  
+_!add diagram for clarity_  
 Connect the Filter system to the roughing pump if not connected  
-Should already be connected as shown in photo _!add photo_  
-At the time of writing, they can be connected via Kwik Flange (KF) 25 hose !verify  
-Close the valve nearest the roughing pump to isolate the roughing pump from everything else
-Make sure other systems hooked up are closed off as well (e.g. the selenium evaporator needs to be closed off here)  
+Should already be connected as shown in photo  
+_!add photo_  
+At the time of writing, they can be connected via Kwik Flange (KF) 25 hose _!verify_    
+Close the valve nearest the roughing pump to isolate the roughing pump from everything else  
+Make sure any other systems hooked up are closed off as well (e.g. the selenium evaporator needs to be closed off here)  
 The valve labeled SV1 (refer to valve diagram below) is a precision valve and should be handled VERY DELICATELY  
 ![Valve Diagram](https://github.com/johnbohunt/Filter.Regeneration/blob/main/Alfredo/Images/Diagram.png?raw=true)  
 Make sure this valve is also closed before pumping  
@@ -84,36 +89,58 @@ Turn on the roughing pump _!specify procedure_
 Note, You DO NOT want to accidentally open the system to the outside atmosphere!!!! Please check and double check what you are about to do at these steps!  
 Slowly open up valves in order of nearest to furthest from roughing pump, waiting for the system pressure to drop to 2-10 torr.
 _!These last three lines of instruction are clearly out of date, these need to be updated._  
+
+---
 ### Run the Heater Tape  
 #### Time to complete 6 - 24 hours depending on how long its been since the last time this was done and the state of the filters  
-The heater tapes are the plastic looking cords which are wrapped around the filters to provide heat to them and allow us to regenerate the filters
-They are controlled through two current regulators (one attached to the heater tape itself) and one which is installed on the edge of the filter skid)  
-Two important checks: These are most important when first setting up the heater tape  
+The heater tapes are the plastic looking cords which are wrapped around the filters to provide heat to them and allow us to regenerate the filters  
+![Heater Tape](https://github.com/johnbohunt/Filter.Regeneration/blob/main/John/images/heater%20tape.jpg?raw=true)  
+
+They are controlled through two current regulators  
+- One with a knob attached to the heater tape itself...  
+![Current Regulator](https://github.com/johnbohunt/Filter.Regeneration/blob/main/John/images/current%20regulator.jpg?raw=true)  
+- ...and one with a screen that actually plugs in to the oulet    
+![Current Regulator 2: Electric Boogaloo](https://github.com/johnbohunt/Filter.Regeneration/blob/main/John/images/current%20regulator%20with%20thermocouple.jpg?raw=true)  
+
+__Two important checks:__ These are most important when first setting up the heater tape  
 1. Do NOT plug in Thermocouple regulators until these checks are performed, as temperature immediately starts to rise  
 2. The cords need to be firmly attached to the steel tubes with little to no air gaps and CAN NOT be touching each other or be touching themselves in any spot 
 
 The Thermocouple (thing that measures the temperature) needs to be installed between the heater tape and the steel  
-Plug both cables from the current regulators with the thermocouples into the power strip on the filter skid  
-If everything is setup, the screens on the current regulators will look like the ones shown here !add photo  
+![Tape Thermocouple](https://github.com/johnbohunt/Filter.Regeneration/blob/main/John/images/thermocouple%20cable%202.jpg?raw=true)  
+Plug both cables from the current regulators with the thermocouples into the power strip on the filter skid. We currently have this set up so the regulators plug into a seperate power strip which we can use to switch them on and off to more easily control the power. Otherwise, the tape will start heating as soon as it's plugged in.  
+![Regulator Cable](https://github.com/johnbohunt/Filter.Regeneration/blob/main/John/images/current%20regulator%20cables.jpg?raw=true)  
+If everything is setup, the screens on the current regulators will look like the ones shown here  
+![Regulator Screens Powered On](https://github.com/johnbohunt/Filter.Regeneration/blob/main/John/images/current%20regulator%20screens.jpg?raw=true)  
+
 The number here shows the current temperature as read by the thermocouple  
-If this tiny little red dot is illuminated, it means the current regulator is allowing current to flow to increase the temperature  
-The system will automatically shut off when the temperature goes over the preset limit; if you are unsure, refer to next slide  
-The system will turn on again when the temperature goes below the preset limit too  
+- If this tiny little red dot is illuminated, it means the current regulator is allowing current to flow to increase the temperature  
+
+The system will automatically shut off when the temperature goes over the preset limit    
+- The system will turn on again when the temperature goes below the preset limit too  
+
 To change the temperature you want to target, press the “SET” button until a number appears  
-Then use the arrows to adjust the temperature to whatever value you want  
-We are currently using 215C as a target to get the internal gas above 180C. This is needed for the copper to regenerate.   
+- Then use the arrows to adjust the temperature to whatever value you want  
+
+We are currently using 265C as a target to get the internal gas above 180C. This is needed for the copper to regenerate.   
+
 Once the desired temperature is set, simply leave the device alone and it will return to operations mode  
 The pressure in the system will slowly rise (as is expected when the gas+water+oxygen gets hotter)
 Now we simply wait for some prescribed period of time  
-6 hours is likely the minimum   
-12+ hours will be needed if the system has been used / open to the air  
+- 6 hours is likely the minimum   
+- 12+ hours will be needed if the system has been used / open to the air  
+
 The system can be left “unattended” as long as you post on the group SLACK account in the “general” category letting people know that this is running and the heater tapes are on  
-No one should touch these heater tapes since they can get quite hot  
-_!We may want to heat the system before we pull a vacuum, as it seems to be difficult to get the interior to our desired temperature without a medium between the tape on the outside and the catalyst on the inside, or at least it's difficult to get a reading on the interior thermocouple._  
+__No one should touch these heater tapes since they can get quite hot__  
+
+---
 ### Turbo Evacuate the System  
 #### Time to Complete: 1-4 Hours  
-Since the this step and the next step will be where we actually start regenerating the filters, we will want to move the system to the location where it can vent the Argon/Hydrogen mixture out of the building  
-We will move the system before turning on the turbo pump and the system SHOULD NOT BE MOVED WHEN THE TURBO PUMP IS OPERATING  
+```
+Since the this step and the next step will be where we actually start regenerating the filters,  
+we will want to move the system to the location where it can vent the Argon/Hydrogen mixture out of the building  
+We will move the system before turning on the turbo pump  
+and the system SHOULD NOT BE MOVED WHEN THE TURBO PUMP IS OPERATING  
 The first step is to unplug the heater tapes (this is how you turn them off)  
 Then close the valve to the roughing pump  
 Turn off the roughing pump  
@@ -122,6 +149,7 @@ Disconnect the KF 25 hose from the roughing pump
 Note: You will hear a sound as the vacuum is broken in the hose  
 Now move the purification skid to wherever you will be doing the regeneration  
 Near the vent tubes in the lab is preferred  
+```
 _!Does the system still need to be disconnected and moved? It's set up in a place where it can ventilate currently_  
 Ensure the system is below 20 mtorr before turning on the Turbo pump. The blades are delicate and will be damaged if operated outside of a near vaccum.    
 The Turbo Pump is controlled by an independent voltage source. Flip the switch to turn on the pump.  
@@ -135,8 +163,11 @@ To monitor further you will need to use the ion gauge (IG) which is mounted on t
 Note: You NEVER want to operate the Ion Gauge if the pressure in the system is above 5 mTorr  
 The ion gauge SHOULD NOT be left on for long periods of time (e.g. > 1 hour) as it will destroy the gauge  
 To turn on the ion gauge press the “menu” button  
+![Ion Gauge](https://github.com/johnbohunt/Filter.Regeneration/blob/main/John/images/ion%20gauge%201.jpg?raw=true)  
 Select the “IG On” from the menu and press “enter”  
+![Turning On the Ion Gauge](https://github.com/johnbohunt/Filter.Regeneration/blob/main/John/images/ion%20gauge%202.jpg?raw=true)  
 After a brief period of “warming up” the gauge should turn on and display the pressure  
+![Ion Gauge Displays the Pressure Dutifully](https://github.com/johnbohunt/Filter.Regeneration/blob/main/John/images/ion%20gauge%203.jpg?raw=true)  
 The goal is to run the turbo until the system achieves at least 10-5 torr  
 Note:  
 - 9.0 10-5 torr is fine  
@@ -145,25 +176,36 @@ Note:
 
 This can take up to 6 hours if the system hasn’t been pumped down for a while.   
 It is ok to leave the system unattended while it pumps  
-Be sure to turn the ion gauge off  
-Press the menu button  
-Use the arrows to select “IG off”  
-Press enter  
+__Be sure to turn the ion gauge off if you leave it unattended__  
+- Press the menu button  
+- Use the arrows to select “IG off”  
+- Press enter  
+
+---
 ### Attach Ar/H Tanks and Vents
 #### Time to complete < 1 hour
 The gas flow regulator (shown below) should be attached to the Argon/Hydrogen (Ar/H) bottle  
+![Well Behaved Gas Flow Regulator](https://github.com/johnbohunt/Filter.Regeneration/blob/main/John/images/gas%20flow%20regulator.jpg?raw=true)![Attached Thusly](https://github.com/johnbohunt/Filter.Regeneration/blob/main/John/images/gas%20flow%20regulator%20and%20arh%20bottle%20are%20best%20friends.jpg?raw=true)   
 __IMPORTANT: THE Ar/H BOTTLE MUST BE ATTACHED TO EITHER THE WALL, THE BOTTLE CART, OR SOME OTHER STURDY STRUCTURE TO PREVENT THE BOTTLE FROM FALLING OVER. NEVER USE A BOTTLE UNLESS IT IS ANCHORED!!!__  
 There is an adapter which allows the connection between the two and needs to be installed prior to attaching (if it is not already there)
-Note: The threads on this adapter to the bottle are “left handed” threads. This means that you rotate counterclockwise to tighten and clockwise to loosen (opposite of normal)  
+- Note: The threads on this adapter to the bottle are “left handed” threads. This means that you rotate counterclockwise to tighten and clockwise to loosen (opposite of normal)  
+
 Be Careful not to strip the threads, brass can deform very easily  
 The Ar/H hose connects to the port shown in the picture which is closest to the Copper filters  
 Note: These hoses are VCR ¼ inch hoses and need VCR ¼ inch gaskets (small metal disks) at the joints and to be tightened very well.  
 The other end should be securely fastened to the exhaust vent  
 This is typically done with a combination of foam/tape/strain relief for the hose  
+
 Now all that is needed is to connect the Residual Gas Analyzer (RGA) to the Windows computer station  
+_!Photo of RGA_  
 The RGA is connected via a USB cable coming out of the back of the RGA  
-The power button on the computer is in the lower right hand corner of the screen  
-Please contact Dr. Asaadi for the username and password on this computer _!This is now on a paper near the computer_ 
+_!Photo of USB on RGA_  
+The computer is very small. The power button is on the right side  
+_!Photo of Computer_  
+The username and password should be attached to the monitor  
+_!Photo of username and password_   
+
+---
 ### Regenerating the filters
 #### Time to complete ≅ many hours
 With all this done and the system connected you should be ready to start the regeneration process.  
@@ -196,25 +238,35 @@ You will want to close the “bleed in valve” which separates the turbo pump f
 Next you will want to plug in the heater tapes for the filter material  
 You will not want to leave the system closed for long (> 30 mins) with the heater tapes on and the system isolated like this...so we will be moving fast through the next steps!  
 You will want to monitor the pressure gauge near the filters throughout the process  
-Now you will want to prepare the Residual Gas Analyzer system
-The RGA is very delicate. Only turn this on if the pressure reads < 10-4 torr on the ion gauge 
-Turn on the RGA  
+Now you will want to prepare the Residual Gas Analyzer (RGA) system  
+The RGA is very delicate. Only turn this on if the pressure reads < 10-4 torr on the ion gauge  
+Turn on the RGA using the switch on the back  
+_!Photo of the RGA power switch_  
 Open the application by clicking on the highlighted icon “RGA”  
-Click the button at the top of the screen (shown to the left) _!Add photo_ 
+_!Photo of RGA icon_  
+Click the button at the top of the screen (shown to the left)  
+_!Photo of Connector icon_ 
 A window will pop up (bottom left).  
 Select the connector with the ID text and hit “connect”  
 Your window should now look like the picture below  
-Now you will want to turn on the filament by clicking the button shown  
-A message window will appear telling you this will take a few seconds and then disappear  
 From the “Mode” menu, select “P vs. T” graph   
+![PvT Graph](https://github.com/johnbohunt/Filter.Regeneration/blob/main/John/images/rga%20pvt.png?raw=true)  
 This is pressure versus time  
+__Double check to ensure the pressure is below 10^-4 torr. This next step is where we can damage the RGA if the pressure is too high.__  
+Now you will want to turn on the filament by clicking the button shown  
+A message window will appear telling you this will take a few seconds and then disappear   
+_!Photo of Filament icon_  
 Then select the “Scan Parameters” button  
 If you cannot click it, simply select “Scan Parameters” from the “Scan” menu  
 This will bring up a menu where you can add each channel and specify what you want to measure  
+![Scan Parameters](https://github.com/johnbohunt/Filter.Regeneration/blob/main/John/images/scan%20perameters%201.png?raw=true)  
+
 Argon, Water, and Oxygen are good places to start  
+![Entered Parameters](https://github.com/johnbohunt/Filter.Regeneration/blob/main/John/images/scan%20parameters%202.png?raw=true)  
 You can always type the element or specify the atomic mass  
+
 Be sure to check each channel as you add them  
-Now you can start the scan by pressing the “Go” button at the top
+Now you can start the scan by pressing the “Go” button at the top  
 The plot should start to populate with the measurement of these elements  
 We will be monitoring this plot  
 You can change the range of the “x” and “y” axis by going to the “Graph” menu and selecting “x-axis…” or “y-axis” and typing in the range you want  
@@ -231,7 +283,7 @@ Once the process has started you will want to closely monitor the pressure gauge
 This pressure should be below 700 torr  
 Once the flow has started, you will open the bleed in valve which allows the Ar/H to vent to the outside world  
 The vent will go up the chimney out of the lab  
-Initially you will only want to open this vale somewhere between ¼ and ⅓ of fully open  
+Initially you will only want to open this valve somewhere between ¼ and ⅓ of fully open  
 Please be careful when opening this valve  
 Be checking the pressure on the gauge nearest the filters  
 Once stable flow is established, we will want to flow in a small amount of Ar/H mixture which has passed through the filters and monitor the Water and Oxygen content  
@@ -261,7 +313,9 @@ What do we do if this is out of spec?
 - If the bottle runs out...see change over slides later (to be developed)  
 
 ##### Monitoring the Water, Oxygen, and Argon in the RGA  
-What you should see on the RGA:  _!add photo_
+What you should see on the RGA:  
+![RGA Looks Like](https://github.com/johnbohunt/Filter.Regeneration/blob/main/John/images/rga%20regen%202.png?raw=true)  
+
 ##### Temperature
 _!We're expecting a temperature spike when adding the Hydrogen/Argon mixture. It's likely this will need to be balanced as well._  
 The temperature needs to be at least 175 C and shouldn't exceed 225 C. Note that spikes as high as 300 C are okay as long as the temperature is maintained below 225 C. Refer to the Copper Catalyst reduction guidline [here](https://github.com/johnbohunt/Filter.Regeneration/blob/8888a869bf07075ab53d143642b467c4da9cf445/Alfredo/Filter.Guidelines/Reduction%20Guidelines%20for%20Copper%20Catalysts.pdf) for more details.  
@@ -275,7 +329,7 @@ If the bottle runs out, you will have to switch the bottle and we should develop
 The goal is to get the water level to ~10-6  
 Oxygen should stay below 10-6  
 #### What the end result starts to look like
-_!Add Photo_  
+![Completed Regen](https://github.com/johnbohunt/Filter.Regeneration/blob/main/John/images/rga%20regen%203.png?raw=true)    
 This regeneration was allowed to run for almost 24 hours from the start and we can start to see very low levels of water and oxygen!  
 #### Steps to end the run
 1. Shut off the Ar/H (close the regulator)  
