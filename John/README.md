@@ -227,7 +227,7 @@ Computer: On and logged in
 Both the stinger gauges should be reading low mTorr levels   
 Numbers need to be established based on more experience  
 Ion Gauge for the full system should read close to 10-5 Torr  
-[Using the Ion Gauge](https://github.com/johnbohunt/Filter.Regeneration/edit/main/John/README.md#using-the-ion-gauge)  
+[Using the Ion Gauge](https://github.com/johnbohunt/Filter.Regeneration/blob/main/John/README.md#using-the-ion-gauge)    
 You will want to close the “bleed in valve” which separates the turbo pump from the filters (this should cause the pressure to drop very quickly)  
 Next you will want to plug in the heater tapes for the filter material  
 You will not want to leave the system closed for long (> 30 mins) with the heater tapes on and the system isolated like this...so we will be moving fast through the next steps!  
