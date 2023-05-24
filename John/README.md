@@ -66,7 +66,8 @@ Shut off the Pumping Station
 There are two vacuum pumps we use to evacuate the system  
 
 - Turbo Pump  
-_!Photo of New Turbo Pump_   
+ <img src="https://github.com/johnbohunt/Filter.Regeneration/blob/main/John/images/IMG_4810.png?raw=true" width=400>   
+  
 - Roughing Pump  
 ![Roughing Pump](https://github.com/johnbohunt/Filter.Regeneration/blob/main/John/images/Roughing%20pump.jpg?raw=true)
 
@@ -74,7 +75,7 @@ These two pumps shouldn't be used on the same volume at the same time, i.e. we w
 _!add diagram for clarity_  
 Connect the Filter system to the roughing pump if not connected  
 Should already be connected as shown in photo  
-_!add photo_  
+<img src="https://github.com/johnbohunt/Filter.Regeneration/blob/main/John/images/IMG_4814.png?raw=true" width=400>  
 At the time of writing, they can be connected via Kwik Flange (KF) 25 hose _!verify_    
 Close the valve nearest the roughing pump to isolate the roughing pump from everything else  
 Make sure any other systems hooked up are closed off as well (e.g. the selenium evaporator needs to be closed off here)  
@@ -88,7 +89,6 @@ Begin with every non specified valve on the filter rig in the CLOSED position
 Turn on the roughing pump _!specify procedure_  
 Note, You DO NOT want to accidentally open the system to the outside atmosphere!!!! Please check and double check what you are about to do at these steps!  
 Slowly open up valves in order of nearest to furthest from roughing pump, waiting for the system pressure to drop to 2-10 torr.
-_!These last three lines of instruction are clearly out of date, these need to be updated._  
 
 ---
 ### Run the Heater Tape  
@@ -160,6 +160,7 @@ Take special care not to disturb the vacuum too much when the turbo is on and be
 When in doubt, turn the turbo off, wait till the blades spin all the way down, then perform whatever task you need to do  
 Once the vacuum gauge nearest the turbo reads ~3 milliTorr (mTorr) you have reached the limit of that gauge’s sensitivity  
 To monitor further you will need to use the ion gauge (IG) which is mounted on top of the turbo station   
+#### Using the Ion Gauge  
 Note: You NEVER want to operate the Ion Gauge if the pressure in the system is above 5 mTorr  
 The ion gauge SHOULD NOT be left on for long periods of time (e.g. > 1 hour) as it will destroy the gauge  
 To turn on the ion gauge press the “menu” button  
@@ -187,6 +188,7 @@ __Be sure to turn the ion gauge off if you leave it unattended__
 The gas flow regulator (shown below) should be attached to the Argon/Hydrogen (Ar/H) bottle  
 ![Well Behaved Gas Flow Regulator](https://github.com/johnbohunt/Filter.Regeneration/blob/main/John/images/gas%20flow%20regulator.jpg?raw=true)![Attached Thusly](https://github.com/johnbohunt/Filter.Regeneration/blob/main/John/images/gas%20flow%20regulator%20and%20arh%20bottle%20are%20best%20friends.jpg?raw=true)   
 __IMPORTANT: THE Ar/H BOTTLE MUST BE ATTACHED TO EITHER THE WALL, THE BOTTLE CART, OR SOME OTHER STURDY STRUCTURE TO PREVENT THE BOTTLE FROM FALLING OVER. NEVER USE A BOTTLE UNLESS IT IS ANCHORED!!!__  
+<img src="https://github.com/johnbohunt/Filter.Regeneration/blob/main/John/images/IMG_4819.png?raw=true" width=400>  
 There is an adapter which allows the connection between the two and needs to be installed prior to attaching (if it is not already there)
 - Note: The threads on this adapter to the bottle are “left handed” threads. This means that you rotate counterclockwise to tighten and clockwise to loosen (opposite of normal)  
 
@@ -197,13 +199,13 @@ The other end should be securely fastened to the exhaust vent
 This is typically done with a combination of foam/tape/strain relief for the hose  
 
 Now all that is needed is to connect the Residual Gas Analyzer (RGA) to the Windows computer station  
-_!Photo of RGA_  
+<img src="https://github.com/johnbohunt/Filter.Regeneration/blob/main/John/images/IMG_4816.png?raw=true" width=400>  
 The RGA is connected via a USB cable coming out of the back of the RGA  
-_!Photo of USB on RGA_  
+<img src="https://github.com/johnbohunt/Filter.Regeneration/blob/main/John/images/IMG_4824.png?raw=true" width=400><img src="https://github.com/johnbohunt/Filter.Regeneration/blob/main/John/images/IMG_4825.png?raw=true" width=400>  
 The computer is very small. The power button is on the right side  
-_!Photo of Computer_  
+<img src="https://github.com/johnbohunt/Filter.Regeneration/blob/main/John/images/IMG_4807.png?raw=true" width=400>  
 The username and password should be attached to the monitor  
-_!Photo of username and password_   
+_!Can I put a photo of username and password? Is that a security issue?_   
 
 ---
 ### Regenerating the filters
@@ -225,15 +227,7 @@ Computer: On and logged in
 Both the stinger gauges should be reading low mTorr levels   
 Numbers need to be established based on more experience  
 Ion Gauge for the full system should read close to 10-5 Torr  
-To turn on the ion gauge press the “menu” button  
-Select the “IG On” from the menu and press “enter”  
-After a brief period of “warming up” the gauge should turn on and display the pressure  
-The goal is to run the turbo until the system achieves at least 10-5 torr  
-Again:
-- 9.0 10-5 torr is fine  
-- 2.0 10-5 torr is better  
-- 10-6 torr is best  
-
+[Using the Ion Gauge](https://github.com/johnbohunt/Filter.Regeneration/edit/main/John/README.md#using-the-ion-gauge)  
 You will want to close the “bleed in valve” which separates the turbo pump from the filters (this should cause the pressure to drop very quickly)  
 Next you will want to plug in the heater tapes for the filter material  
 You will not want to leave the system closed for long (> 30 mins) with the heater tapes on and the system isolated like this...so we will be moving fast through the next steps!  
@@ -241,7 +235,7 @@ You will want to monitor the pressure gauge near the filters throughout the proc
 Now you will want to prepare the Residual Gas Analyzer (RGA) system  
 The RGA is very delicate. Only turn this on if the pressure reads < 10-4 torr on the ion gauge  
 Turn on the RGA using the switch on the back  
-_!Photo of the RGA power switch_  
+<img src="https://github.com/johnbohunt/Filter.Regeneration/blob/main/John/images/IMG_4808.png?raw=true" width=400>    
 Open the application by clicking on the highlighted icon “RGA”  
 _!Photo of RGA icon_  
 Click the button at the top of the screen (shown to the left)  
