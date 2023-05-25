@@ -1,0 +1,26 @@
+const int analogPin = A2;  // ADC input pin
+const int numSamples = 50; // Number of samples to take
+
+void setup() {
+  Serial.begin(9600);  // Initialize serial communication
+  analogReference(DEFAULT); // Set the default reference voltage (5V)
+}
+
+void loop() {
+  int total = 0;
+
+  // Take 50 samples and sum them up
+  for (int i = 0; i < numSamples; i++) {
+    total += analogRead(analogPin);
+    delay(10); // Delay between each sample (adjust if needed)
+  }
+
+  // Calculate the average ADC value
+  float average = (float)total / numSamples;
+
+  // Print the average value
+  Serial.print("Average ADC value: ");
+  Serial.println(average);
+
+  delay(1000);  // Delay before taking the next set of samples
+}
