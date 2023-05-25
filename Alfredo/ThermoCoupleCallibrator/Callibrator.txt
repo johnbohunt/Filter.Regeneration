@@ -1,6 +1,10 @@
 const int analogPin = A2;  // ADC input pin
 const int numSamples = 50; // Number of samples to take
 
+// Conversion equation constants
+const float slope = 1.2617;
+const float intercept = 41.132;
+
 void setup() {
   Serial.begin(9600);  // Initialize serial communication
   analogReference(DEFAULT); // Set the default reference voltage (5V)
@@ -18,9 +22,17 @@ void loop() {
   // Calculate the average ADC value
   float average = (float)total / numSamples;
 
-  // Print the average value
-  Serial.print("Average ADC value: ");
+  // Print the average ADC value
+  Serial.print("AVG ADC-");
   Serial.println(average);
+
+  // Convert ADC value to temperature
+  float temperature = slope * average + intercept;
+
+  // Print the temperature in Celsius
+  Serial.print("::: T-");
+  Serial.print(temperature);
+  Serial.println(" °C");
 
   delay(1000);  // Delay before taking the next set of samples
 }
