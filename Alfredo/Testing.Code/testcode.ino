@@ -5,11 +5,11 @@ const int numSamples = 50; // Number of samples to take
 const float slope = 1.2617;
 const float intercept = 41.132;
 
-// Desired temperature and time constants
+// Desired temperature
 const float desiredTemperature = 50.0; // Desired temperature in Celsius
-const float timeConstant = 0.1;       // Time constant for approaching the desired temperature
 
 float averageTemperature = 0.0; // Average temperature based on previous measurements
+float timeConstant = 0.0;       // Time constant for approaching the desired temperature
 
 void setup() {
   Serial.begin(9600);  // Initialize serial communication
@@ -31,8 +31,13 @@ void loop() {
   // Convert ADC value to temperature
   float temperature = slope * average + intercept;
 
-  // Update average temperature using previous measurements and time constant
-  averageTemperature = (averageTemperature * (timeConstant - 1.0) + temperature) / timeConstant;
+  // Update average temperature using previous measurements
+  averageTemperature = (averageTemperature * 9.0 + temperature) / 10.0;
+
+  // Calculate the time constant if it hasn't been calculated yet
+  if (timeConstant == 0.0 && averageTemperature != desiredTemperature) {
+    timeConstant = 1.0 / abs(averageTemperature - desiredTemperature);
+  }
 
   // Print the average ADC value
   Serial.print("Average ADC value: ");
@@ -43,19 +48,12 @@ void loop() {
   Serial.print(temperature);
   Serial.println(" °C");
 
-  // Calculate time remaining to reach the desired temperature
-  float timeRemaining = (desiredTemperature - averageTemperature) * timeConstant;
-
-  // Convert time remaining to minutes and seconds
-  int minutes = int(timeRemaining) / 60;
-  int seconds = int(timeRemaining) % 60;
-
-  // Print the remaining time in minutes and seconds
-  Serial.print("Time Left: [");
-  Serial.print(minutes);
-  Serial.print(" min. ");
-  Serial.print(seconds);
-  Serial.println(" sec.]");
+  // Print the calculated time constant
+  if (timeConstant != 0.0) {
+    Serial.print("Time Constant: ");
+    Serial.print(timeConstant);
+    Serial.println(" sec");
+  }
 
   delay(1000);  // Delay before taking the next set of samples
 }
