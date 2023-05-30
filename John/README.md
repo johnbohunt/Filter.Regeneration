@@ -108,6 +108,10 @@ __Two important checks:__ These are most important when first setting up the hea
 
 The Thermocouple (thing that measures the temperature) needs to be installed between the heater tape and the steel  
 ![Tape Thermocouple](https://github.com/johnbohunt/Filter.Regeneration/blob/main/John/images/thermocouple%20cable%202.jpg?raw=true)  
+There should be some form of insulation covering the tape. Currently, we are using a hard material that is wrapped in a one-sided reflective foil, but fiberglass and aluminum foil have been used in the past.  
+![Insulation]() ![With Foil Covering Gaps]()  
+__Make sure to ventilate the top of the filter.__ When the tape gets hot, some coating or adhesive it has burns off and forms smoke. In the future, we'd like this to go away, but for now, proper ventilation helps a lot.  
+  
 Plug both cables from the current regulators with the thermocouples into the power strip on the filter skid. We currently have this set up so the regulators plug into a seperate power strip which we can use to switch them on and off to more easily control the power. Otherwise, the tape will start heating as soon as it's plugged in.  
 ![Regulator Cable](https://github.com/johnbohunt/Filter.Regeneration/blob/main/John/images/current%20regulator%20cables.jpg?raw=true)  
 If everything is setup, the screens on the current regulators will look like the ones shown here  
@@ -122,9 +126,10 @@ The system will automatically shut off when the temperature goes over the preset
 To change the temperature you want to target, press the “SET” button until a number appears  
 - Then use the arrows to adjust the temperature to whatever value you want  
 
-We are currently using 265C as a target to get the internal gas above 180C. This is needed for the copper to regenerate.   
+Note: There may only be one heater tape in use, so there may only be one regulator.  
+We are currently using 180C as the set point for the tape. This is needed for the copper to regenerate.   
 
-Once the desired temperature is set, simply leave the device alone and it will return to operations mode  
+Once the desired temperature is set, simply leave the device alone and it will return to operations mode (this takes a while)  
 The pressure in the system will slowly rise (as is expected when the gas+water+oxygen gets hotter)
 Now we simply wait for some prescribed period of time  
 - 6 hours is likely the minimum   
