@@ -1,6 +1,13 @@
-# Filter.Regeneration
+# Filter.Regeneration  
 Liquid Argon Filter Regeneration Process  
-[Instructions](https://github.com/johnbohunt/Filter.Regeneration/tree/main/John#instructions)
+[Instructions](https://github.com/johnbohunt/Filter.Regeneration/tree/main/John#instructions)  
+### Overview of Steps:  
+1. Evacuate the Vessel
+2. Run the Heater Tapes
+3. Turbo Evacuate the System and Prep the RGA  
+4. Attach the Argon/Hydrogen Tanks and Vents
+5. Regenerate the Filters  
+  
 ## Warnings  
 ### Evacuating the Vessel
 The "bleed in valve" is a percision valve should be handled very delicately and will need to be turned several times to open and close it all the way  
@@ -11,7 +18,8 @@ Avoid opening the system to outside pressure. Carefully check and double check w
 ### Running the Heater Tape   
 When attaching the tape, the tape should not be overlapping at any point  
 The thermocouple regulator must be installed inbetween the heater tape and the steel  
-The temperature can be set on the current regulator. The limit should be set to 180 C
+The temperature can be set on the current regulator. The limit should be no higher than 225 C  
+Ventilate the fumes that come off of the heater tape.  
 ### Turbo Evactuating System  
 The turbo runs at very high rpm. If the system were to suddenly be exposed to high pressure (atmosphere) or be shaken there is a risk that the vacuum could fail catastrophically (blow up)  
 Take special care not to disturb the vacuum too much when the turbo is on and be extra careful not to accidentally open a valve that you shouldn’t  
@@ -244,17 +252,18 @@ Turn on the RGA using the switch on the back
 Open the application by clicking on the highlighted icon “RGA”  
 _!Photo of RGA icon_  
 Click the button at the top of the screen (shown to the left)  
-_!Photo of Connector icon_ 
+![COM Icon](https://github.com/johnbohunt/Filter.Regeneration/blob/main/John/images/RGA%20COM%20icon.png?raw=true)   
 A window will pop up (bottom left).  
 Select the connector with the ID text and hit “connect”  
-Your window should now look like the picture below  
+![Connecting the RGA](https://github.com/johnbohunt/Filter.Regeneration/blob/main/John/images/Getting%20the%20RGA%20connected%20.png?raw=true)    
 From the “Mode” menu, select “P vs. T” graph   
 ![PvT Graph](https://github.com/johnbohunt/Filter.Regeneration/blob/main/John/images/rga%20pvt.png?raw=true)  
 This is pressure versus time  
 __Double check to ensure the pressure is below 10^-4 torr. This next step is where we can damage the RGA if the pressure is too high.__  
 Now you will want to turn on the filament by clicking the button shown  
+![RGA Filament icon](https://github.com/johnbohunt/Filter.Regeneration/blob/main/John/images/RGA%20Filament%20icon.png?raw=true)  
 A message window will appear telling you this will take a few seconds and then disappear   
-_!Photo of Filament icon_  
+  
 Then select the “Scan Parameters” button  
 If you cannot click it, simply select “Scan Parameters” from the “Scan” menu  
 This will bring up a menu where you can add each channel and specify what you want to measure  
@@ -266,18 +275,25 @@ You can always type the element or specify the atomic mass
 
 Be sure to check each channel as you add them  
 Now you can start the scan by pressing the “Go” button at the top  
+![Go Button](https://github.com/johnbohunt/Filter.Regeneration/blob/main/John/images/Go%20button%20icon.png?raw=true)  
 The plot should start to populate with the measurement of these elements  
 We will be monitoring this plot  
 You can change the range of the “x” and “y” axis by going to the “Graph” menu and selecting “x-axis…” or “y-axis” and typing in the range you want  
+  
 You will now want to open the Argon/Hydrogen bottle and build pressure at the regulator  
 You will turn the large valve on the bottle  
 Make sure the regulator valve (gold valve on the regulator) is closed  
 This valve is closed if it is unscrewed all the way out  
+![Regulator Valves and How They Work](https://github.com/johnbohunt/Filter.Regeneration/blob/main/John/images/Regulator%20valves%20and%20how%20they%20work.png?raw=true)  
+  
 Once opened, you should see pressure built in the regulator  
-Note, you will want to be sure the valve which allows the Ar/H to flow into the system to be open  
-Now you will want to allow the Ar/H to flow by rotating the valve on the regulator clockwise  
+![Pressure Reg Gauge](https://github.com/johnbohunt/Filter.Regeneration/blob/main/John/images/Pressure%20regulator%20gauge%20shows%20pressure%20in%20the%20regulator%20.png?raw=true)  
+Note, you will want to be sure the valve which allows the Ar/H to flow into the system to be open (V1 on the diagram)  
+
+Now you will want to allow the Ar/H to flow by rotating the valve on the regulator clockwise   
+![Regulator Valve Opening](https://github.com/johnbohunt/Filter.Regeneration/blob/main/John/images/Regulator%20valves%20and%20how%20it%20opens%20.png?raw=true)  
 The goal is to get a flow rate between 10 and 30 Cubic Feet per Hour (CFH)  
-This is the black scale on the regulator  
+![Flow Rate Gauge](https://github.com/johnbohunt/Filter.Regeneration/blob/main/John/images/Flow%20rate%20gauge%20shows%20the%20flow%20rate.png?raw=true)  
 Once the process has started you will want to closely monitor the pressure gauge closest to the filters  
 This pressure should be below 700 torr  
 Once the flow has started, you will open the bleed in valve which allows the Ar/H to vent to the outside world  
