@@ -9,14 +9,20 @@ void setup() {
   size(400, 200);
   arduinoLines = new ArrayList<String>();
   
-  // Connect to Arduino
+  // List available COM ports
   String[] ports = Serial.list();
-  if (ports.length > 0) {
-    comPort = ports[0];
+  for (int i = 0; i < ports.length; i++) {
+    println(i + ": " + ports[i]);
+  }
+  
+  // Prompt user to select a COM port
+  int selectedPort = int(input("Enter the index of the COM port to connect: "));
+  if (selectedPort >= 0 && selectedPort < ports.length) {
+    comPort = ports[selectedPort];
     arduino = new Serial(this, comPort, 9600);
     println("Arduino connected on " + comPort);
   } else {
-    println("Arduino not found.");
+    println("Invalid COM port selection.");
     exit();
   }
   
@@ -50,4 +56,8 @@ void keyPressed() {
 
 String getTimeStamp() {
   return nf(hour(), 2) + ":" + nf(minute(), 2) + ":" + nf(second(), 2);
+}
+
+String input(String prompt) {
+  return javax.swing.JOptionPane.showInputDialog(frame, prompt);
 }
