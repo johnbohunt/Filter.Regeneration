@@ -2,7 +2,7 @@
 Liquid Argon Filter Regeneration Process  
 [Instructions](https://github.com/johnbohunt/Filter.Regeneration/tree/main/John#instructions)  
 ### Overview of Steps:  
-1. Evacuate the Vessel
+1. [Evacuate the Vessel](https://github.com/johnbohunt/Filter.Regeneration/tree/main/John#evacuate-the-vessel)
 2. Run the Heater Tapes
 3. Turbo Evacuate the System and Prep the RGA  
 4. Attach the Argon/Hydrogen Tanks and Vents
@@ -135,7 +135,12 @@ To change the temperature you want to target, press the “SET” button until a
 - Then use the arrows to adjust the temperature to whatever value you want  
 
 Note: There may only be one heater tape in use, so there may only be one regulator.  
-We are currently using 180C as the set point for the tape. This is needed for the copper to regenerate.   
+  
+The system needs to be at least 175C to regenerate.  
+However, we want to avoid sustained temperatures higher than 250C.  
+Therefore, it's recommended to set the tape no higher than 250C during the initial "bake out" process and lower the temperature during regeneration.  
+The copper catalyst is the limiting factor here. 
+Please refer to the [copper catalyst guidelines](https://github.com/johnbohunt/Filter.Regeneration/blob/main/Alfredo/Filter.Guidelines/Reduction%20Guidelines%20for%20Copper%20Catalysts.pdf) for more info.  
 
 Once the desired temperature is set, simply leave the device alone and it will return to operations mode (this takes a while)  
 The pressure in the system will slowly rise (as is expected when the gas+water+oxygen gets hotter)
