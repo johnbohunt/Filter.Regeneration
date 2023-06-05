@@ -1,0 +1,73 @@
+import processing.serial.*;
+import java.io.*;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
+Serial arduinoPort;
+PrintWriter outputWriter;
+
+void setup() {
+  // Find and open the serial port for Arduino
+  String portName = findArduinoPort();
+  if (portName == null) {
+    println("Arduino port not found!");
+    exit();
+  }
+  arduinoPort = new Serial(this, portName, 9600);
+  
+  // Create a PrintWriter to write data to a text file
+  outputWriter = createWriter("data.txt");
+  
+  // Set the initial timestamp
+  String timestamp = getCurrentTimestamp();
+  
+  // Write the timestamp to the file
+  outputWriter.println("Start: " + timestamp);
+}
+
+void draw() {
+  if (arduinoPort.available() > 0) {
+    // Read data from the serial port
+    String data = arduinoPort.readStringUntil('\n');
+    
+    if (data != null) {
+      // Remove leading/trailing white spaces and newline characters
+      data = data.trim();
+      
+      // Get the current timestamp
+      String timestamp = getCurrentTimestamp();
+      
+      // Save the data and timestamp to the file
+      outputWriter.println(timestamp + " - " + data);
+      
+      // Print the data and timestamp to the console
+      println(timestamp + " - " + data);
+      
+      // Check for a stop signal from the Arduino
+      if (data.equals("STOP")) {
+        // Close the file
+        outputWriter.flush();
+        outputWriter.close();
+        
+        // Stop the program
+        noLoop();
+      }
+    }
+  }
+}
+
+String getCurrentTimestamp() {
+  LocalDateTime now = LocalDateTime.now();
+  DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+  return now.format(formatter);
+}
+
+String findArduinoPort() {
+  String[] ports = Serial.list();
+  for (String port : ports) {
+    if (port.startsWith("/dev/cu.usbmodem") || port.startsWith("COM")) {
+      return port;
+    }
+  }
+  return null;
+}
