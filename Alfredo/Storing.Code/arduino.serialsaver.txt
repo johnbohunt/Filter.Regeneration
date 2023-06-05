@@ -3,7 +3,7 @@ import java.io.*;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-Serial arduinoPort;
+processing.serial.Serial arduinoPort;
 PrintWriter outputWriter;
 
 void setup() {
@@ -13,7 +13,7 @@ void setup() {
     println("Arduino port not found!");
     exit();
   }
-  arduinoPort = new Serial(this, portName, 9600);
+  arduinoPort = new processing.serial.Serial(this, portName, 9600);
   
   // Create a PrintWriter to write data to a text file
   outputWriter = createWriter("data.txt");
@@ -63,7 +63,7 @@ String getCurrentTimestamp() {
 }
 
 String findArduinoPort() {
-  String[] ports = Serial.list();
+  String[] ports = processing.serial.Serial.list();
   for (String port : ports) {
     if (port.startsWith("/dev/cu.usbmodem") || port.startsWith("COM")) {
       return port;
