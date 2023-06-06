@@ -1,12 +1,11 @@
 # Filter.Regeneration  
-Liquid Argon Filter Regeneration Process  
-[Instructions](https://github.com/johnbohunt/Filter.Regeneration/tree/main/John#instructions)  
+Liquid Argon Filter Regeneration Process   
 ### Overview of Steps:  
-1. [Evacuate the Vessel](https://github.com/johnbohunt/Filter.Regeneration/tree/main/John#evacuate-the-vessel)
-2. Run the Heater Tapes
-3. Turbo Evacuate the System and Prep the RGA  
-4. Attach the Argon/Hydrogen Tanks and Vents
-5. Regenerate the Filters  
+1. [Evacuating the Vessel](https://github.com/johnbohunt/Filter.Regeneration/tree/main/John#evacuating-the-vessel-1)  
+2. [Run the Heater Tapes](https://github.com/johnbohunt/Filter.Regeneration/tree/main/John#run-the-heater-tape)  
+3. [Turbo Evacuate the System and Prep the RGA](https://github.com/johnbohunt/Filter.Regeneration/tree/main/John#turbo-evacuate-the-system)   
+4. [Attach the Argon/Hydrogen Tanks and Vents](https://github.com/johnbohunt/Filter.Regeneration/tree/main/John#attach-arh-tanks-and-vents-1)  
+5. [Regenerate the Filters](https://github.com/johnbohunt/Filter.Regeneration/tree/main/John#regenerating-the-filters)    
   
 ## Warnings  
 ### Evacuating the Vessel
