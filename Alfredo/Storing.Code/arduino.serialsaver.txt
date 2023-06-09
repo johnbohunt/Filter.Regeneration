@@ -9,7 +9,11 @@ void setup() {
 
   // Create a new text file
   File file = new File(filename);
-  file.createNewFile();
+  try {
+    file.createNewFile();
+  } catch (IOException e) {
+    // Handle the exception
+  }
 
   // Open the text file for writing
   PrintWriter out = new PrintWriter(file);
