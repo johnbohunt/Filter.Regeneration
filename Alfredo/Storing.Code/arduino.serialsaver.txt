@@ -1,64 +1,27 @@
-import processing.core.PApplet;
 import processing.serial.*;
 
-Serial arduino;
-String comPort;
-ArrayList<String> arduinoLines;
-PrintWriter outputFile;
+Serial myPort;
+String filename = "output.txt";
 
 void setup() {
-  size(400, 200);
-  arduinoLines = new ArrayList<String>();
-  
-  // List available COM ports
-  String[] ports = Serial.list();
-  for (int i = 0; i < ports.length; i++) {
-    println(i + ": " + ports[i]);
-  }
-  
-  // Prompt user to select a COM port
-  int selectedPort = int(input("Enter the index of the COM port to connect: "));
-  if (selectedPort >= 0 && selectedPort < ports.length) {
-    comPort = ports[selectedPort];
-    arduino = new Serial(this, comPort, 9600);
-    println("Arduino connected on " + comPort);
-  } else {
-    println("Invalid COM port selection.");
-    exit();
-  }
-  
-  // Create a file for storing the lines
-  outputFile = createWriter("arduino_output.txt");
+  // Initialize the serial port
+  myPort = new Serial(this, "COM4", 9600);
+
+  // Create a new text file
+  File file = new File(filename);
+  file.createNewFile();
+
+  // Open the text file for writing
+  PrintWriter out = new PrintWriter(file);
 }
 
 void draw() {
-  // Read incoming lines from Arduino
-  while (arduino.available() > 0) {
-    String line = arduino.readStringUntil('\n');
-    if (line != null) {
-      // Timestamp the line
-      String timestampedLine = getTimeStamp() + ": " + line.trim();
-      arduinoLines.add(timestampedLine);
-      println(timestampedLine);
-      // Write the line to the output file
-      outputFile.println(timestampedLine);
-      outputFile.flush();
-    }
+  // Check if there is any data available from the serial port
+  if (myPort.available() > 0) {
+    // Read the data from the serial port
+    String data = myPort.readStringUntil('\n');
+
+    // Write the data to the text file
+    out.println(data);
   }
-}
-
-void keyPressed() {
-  // Close the output file when "ESC" key is pressed
-  if (keyCode == ESC) {
-    outputFile.close();
-    exit();
-  }
-}
-
-String getTimeStamp() {
-  return nf(hour(), 2) + ":" + nf(minute(), 2) + ":" + nf(second(), 2);
-}
-
-String input(String prompt) {
-  return javax.swing.JOptionPane.showInputDialog(((PApplet)this).frame, prompt);
 }
