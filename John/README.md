@@ -17,7 +17,7 @@ Avoid opening the system to outside pressure. Carefully check and double check w
 ### Running the Heater Tape   
 When attaching the tape, the tape should not be overlapping at any point  
 The thermocouple regulator must be installed inbetween the heater tape and the steel  
-The temperature can be set on the current regulator. The limit should be no higher than 225 C  
+The temperature can be set on the current regulator. The limit should be no higher than 225&deg;C  
 Ventilate the fumes that come off of the heater tape.  
 ### Turbo Evactuating System  
 The turbo runs at very high rpm. If the system were to suddenly be exposed to high pressure (atmosphere) or be shaken there is a risk that the vacuum could fail catastrophically (blow up)  
@@ -25,11 +25,11 @@ Take special care not to disturb the vacuum too much when the turbo is on and be
 When in doubt, turn the turbo off, wait till the blades spin all the way down, then perform whatever task you need to do  
 You NEVER want to operate the Ion Gauge if the pressure in the system is above 5 mTorr  
 The ion gauge SHOULD NOT be left on for long periods of time (e.g. > 1 hour) as it will destroy the gauge
-The goal is to run the turbo until the system achieves at least 10-5 torr  
+The goal is to run the turbo until the system achieves at least $10^{-5}$ torr  
   
-- 9.0 10-5 torr is fine  
-- 2.0 10-5 torr is better  
-- 10-6 torr is best 
+- 9.0 $10^{-5}$ torr is fine  
+- 2.0 $10^{-5}$ torr is better  
+- $10^{-6}$ torr is best 
 
 This can take up to 6 hours if the system hasn’t been pumped down for a while.  
 It is ok to leave the system unattended while it pumps  
@@ -43,15 +43,15 @@ The threads on this adapter to the bottle are “left handed” threads. This me
 Be Careful not to strip the threads, brass can deform very easily  
 These hoses are VCR ¼ inch hoses and need VCR ¼ inch gaskets (small metal disks) at the joints and to be tightened very well.  
 You will not want to leave the system closed for long (> 30 mins) with the heater tapes on and the system isolated like this  
-Only turn on the RGA if the pressure reads < 10-4 torr on the ion gauge  
+Only turn on the RGA if the pressure reads < $10^{-4}$ torr on the ion gauge  
 ### Starting the Regeneration Process
 When starting the regeneration process, you will want to be sure the valve which allows the Ar/H to flow into the system to be open  
 This pressure should be below 700 torr  
-Pressure near the filter between 400 - 700 Torr (500 torr is ideal)
-Pressure near the turbo pump below 10-4 Torr (somewhere around 10-5 Torr is ideal)
-The Ar/H flow rate between 10 and 30 CFH (20 - 25 CFH is ideal)
-The goal is to get the water level to ~10-6
-Oxygen should stay below 10-6
+Pressure near the filter between 400 - 700 Torr (500 torr is ideal)  
+Pressure near the turbo pump below $10^{-4}$ Torr (somewhere around $10^{-5}$ Torr is ideal)  
+The Ar/H flow rate between 10 and 30 CFH (20 - 25 CFH is ideal)  
+The goal is to get the water level to ~ $10^{-6}$  
+Oxygen should stay below $10^{-6}$
 ### Steps to end the run
 Shut off the Ar/H (close the regulator)  
 Close the Ar/H bottle  
@@ -135,9 +135,9 @@ To change the temperature you want to target, press the “SET” button until a
 
 Note: There may only be one heater tape in use, so there may only be one regulator.  
   
-The system needs to be at least 175C to regenerate.  
-However, we want to avoid sustained temperatures higher than 250C.  
-Therefore, it's recommended to set the tape no higher than 250C during the initial "bake out" process and lower the temperature during regeneration.  
+The system needs to be at least 175&deg;C to regenerate.  
+However, we want to avoid sustained temperatures higher than 250&deg;C.  
+Therefore, it's recommended to set the tape no higher than 250&deg;C during the initial "bake out" process and lower the temperature during regeneration.  
 The copper catalyst is the limiting factor here. 
 Please refer to the [copper catalyst guidelines](https://github.com/johnbohunt/Filter.Regeneration/blob/main/Alfredo/Filter.Guidelines/Reduction%20Guidelines%20for%20Copper%20Catalysts.pdf) for more info.  
 
@@ -186,11 +186,11 @@ Select the “IG On” from the menu and press “enter”
 ![Turning On the Ion Gauge](https://github.com/johnbohunt/Filter.Regeneration/blob/main/John/images/ion%20gauge%202.jpg?raw=true)  
 After a brief period of “warming up” the gauge should turn on and display the pressure  
 ![Ion Gauge Displays the Pressure Dutifully](https://github.com/johnbohunt/Filter.Regeneration/blob/main/John/images/ion%20gauge%203.jpg?raw=true)  
-The goal is to run the turbo until the system achieves at least 10-5 torr  
+The goal is to run the turbo until the system achieves at least $10^{-5 torr}$  
 Note:  
-- 9.0 10-5 torr is fine  
-- 2.0 10-5 torr is better  
-- 10-6 torr is best  
+- 9.0 $10^{-5}$ torr is fine  
+- 2.0 $10^{-5}$ torr is better  
+- $10^{-6}$ torr is best  
 
 This can take up to 6 hours if the system hasn’t been pumped down for a while.   
 It is ok to leave the system unattended while it pumps  
@@ -243,14 +243,14 @@ Computer: On and logged in
 #### What should the pressures read?
 Both the stinger gauges should be reading low mTorr levels   
 Numbers need to be established based on more experience  
-Ion Gauge for the full system should read close to 10-5 Torr  
+Ion Gauge for the full system should read close to $10^{-5}$ Torr  
 [Using the Ion Gauge](https://github.com/johnbohunt/Filter.Regeneration/blob/main/John/README.md#using-the-ion-gauge)    
 You will want to close the “bleed in valve” which separates the turbo pump from the filters (this should cause the pressure to drop very quickly)  
 Next you will want to plug in the heater tapes for the filter material  
 You will not want to leave the system closed for long (> 30 mins) with the heater tapes on and the system isolated like this...so we will be moving fast through the next steps!  
 You will want to monitor the pressure gauge near the filters throughout the process  
 Now you will want to prepare the Residual Gas Analyzer (RGA) system  
-The RGA is very delicate. Only turn this on if the pressure reads < 10-4 torr on the ion gauge  
+The RGA is very delicate. Only turn this on if the pressure reads < $10^{-4}$ torr on the ion gauge  
 Turn on the RGA using the switch on the back  
 <img src="https://github.com/johnbohunt/Filter.Regeneration/blob/main/John/images/IMG_4808.png?raw=true" width=400>    
 Open the application by clicking on the highlighted icon “RGA”  
@@ -263,7 +263,7 @@ Select the connector with the ID text and hit “connect”
 From the “Mode” menu, select “P vs. T” graph   
 ![PvT Graph](https://github.com/johnbohunt/Filter.Regeneration/blob/main/John/images/rga%20pvt.png?raw=true)  
 This is pressure versus time  
-__Double check to ensure the pressure is below 10^-4 torr. This next step is where we can damage the RGA if the pressure is too high.__  
+__Double check to ensure the pressure is below $10^{-4}$ torr. This next step is where we can damage the RGA if the pressure is too high.__  
 Now you will want to turn on the filament by clicking the button shown  
 ![RGA Filament icon](https://github.com/johnbohunt/Filter.Regeneration/blob/main/John/images/RGA%20Filament%20icon.png?raw=true)  
 A message window will appear telling you this will take a few seconds and then disappear   
@@ -307,8 +307,8 @@ Please be careful when opening this valve
 Be checking the pressure on the gauge nearest the filters  
 Once stable flow is established, we will want to flow in a small amount of Ar/H mixture which has passed through the filters and monitor the Water and Oxygen content  
 You can SLOWLY OPEN the bleed in valve monitoring the pressure on the ion gauge  
-__THE PRESSURE ON THE ION GAUGE SHOULD STAY ~10-5 TORR__  
-___NEVER GO ABOVE 10-4 TORR___  
+__THE PRESSURE ON THE ION GAUGE SHOULD STAY ~ $10^{-5}$ TORR__  
+___NEVER GO ABOVE_ $10^{-4}$ TORR__  
 #### A Balancing Act
 What you will do now is a balancing act to get the flow rate of Ar/H into the system well matched to the venting valve and the flow into the RGA   
 This typically takes 1 hour of tweaking, letting things run, and tweaking again  
@@ -319,7 +319,7 @@ What do we do if this is out of spec?
 - If the pressure is too high, open the vent valve and decrease the flow rate  
 - If things go crazy, close the bottle valve!  
 
-##### Pressure near the turbo pump below 10-4 Torr (somewhere around 10-5 Torr is ideal)  
+##### Pressure near the turbo pump below $10^{-4}$ Torr (somewhere around $10^{-5}$ Torr is ideal)  
 What do we do if this is out of spec?  
 - If the pressure is too low, carefully and slowly open the bleed in valve and/or increase the flow rate  
 - If the pressure is too high, quickly close the bleed in valve and turn off the ion gauge  
@@ -337,7 +337,7 @@ What you should see on the RGA:
 
 ##### Temperature
 _!We're expecting a temperature spike when adding the Hydrogen/Argon mixture. It's likely this will need to be balanced as well._  
-The temperature needs to be at least 175 C and shouldn't exceed 225 C. Note that spikes as high as 300 C are okay as long as the temperature is maintained below 225 C. Refer to the Copper Catalyst reduction guidline [here](https://github.com/johnbohunt/Filter.Regeneration/blob/8888a869bf07075ab53d143642b467c4da9cf445/Alfredo/Filter.Guidelines/Reduction%20Guidelines%20for%20Copper%20Catalysts.pdf) for more details.  
+The temperature needs to be at least 175&deg;C and shouldn't exceed 225&deg;C. Note that spikes as high as 300&deg;C are okay as long as the temperature is maintained below 225&deg;C. Refer to the Copper Catalyst reduction guidline [here](https://github.com/johnbohunt/Filter.Regeneration/blob/8888a869bf07075ab53d143642b467c4da9cf445/Alfredo/Filter.Guidelines/Reduction%20Guidelines%20for%20Copper%20Catalysts.pdf) for more details.  
 #### Waiting Game  
 Now we will let the filter regeneration happen!  
 We will want to monitor this closely over the first 2-3 hours and then less frequently later  
@@ -345,8 +345,8 @@ Monitoring closely the pressure everywhere and the flow rate on the bottle
 The regeneration will likely take 10+ hours (depending on how bad the filters are contaminated)  
 The system can be left unattended for extended periods of time as long as the Ar/H bottle is relatively full  
 If the bottle runs out, you will have to switch the bottle and we should develop the procedure to do this.  
-The goal is to get the water level to ~10-6  
-Oxygen should stay below 10-6  
+The goal is to get the water level to ~ $10^{-6}$  
+Oxygen should stay below $10^{-6}$  
 #### What the end result starts to look like
 ![Completed Regen](https://github.com/johnbohunt/Filter.Regeneration/blob/main/John/images/rga%20regen%203.png?raw=true)    
 This regeneration was allowed to run for almost 24 hours from the start and we can start to see very low levels of water and oxygen!  
