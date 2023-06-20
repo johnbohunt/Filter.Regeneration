@@ -18,6 +18,8 @@ Avoid opening the system to outside pressure. Carefully check and double check w
 When attaching the tape, the tape should not be overlapping at any point  
 The thermocouple regulator must be installed inbetween the heater tape and the steel  
 The temperature can be set on the current regulator. The limit should be no higher than 225&deg;C  
+The tape is rated for a maximum of 232&deg;C.  
+Take care to make sure it doesn't sustain higher temperatures for a significant length of time during regeneration.  
 Ventilate the fumes that come off of the heater tape.  
 ### Turbo Evactuating System  
 The turbo runs at very high rpm. If the system were to suddenly be exposed to high pressure (atmosphere) or be shaken there is a risk that the vacuum could fail catastrophically (blow up)  
@@ -136,10 +138,16 @@ To change the temperature you want to target, press the “SET” button until a
 Note: There may only be one heater tape in use, so there may only be one regulator.  
   
 The system needs to be at least 175&deg;C to regenerate.  
-However, we want to avoid sustained temperatures higher than 250&deg;C.  
-Therefore, it's recommended to set the tape no higher than 250&deg;C during the initial "bake out" process and lower the temperature during regeneration.  
-The copper catalyst is the limiting factor here. 
-Please refer to the [copper catalyst guidelines](https://github.com/johnbohunt/Filter.Regeneration/blob/main/Alfredo/Filter.Guidelines/Reduction%20Guidelines%20for%20Copper%20Catalysts.pdf) for more info.  
+However, we want to avoid sustained temperatures higher than 225&deg;C.  
+This is for both the catalyst and the tape.  
+- The catalyst is rated for sustained temperatures of 225&deg;C.
+  - It's also rated for peaks up to 300&deg;C as long as those temperatures aren't sustained.
+  - Please refer to the [copper catalyst guidelines](https://github.com/johnbohunt/Filter.Regeneration/blob/main/Alfredo/Filter.Guidelines/Reduction%20Guidelines%20for%20Copper%20Catalysts.pdf) for more info.  
+- The tape is rated for a maximum exposure of 232&deg;C.
+  - It tends to get a bit hotter than the temperature it's set to at maximum.
+ 
+
+Therefore, it's recommended to set the tape no higher than 225&deg;C during the initial "bake out" process and lower the temperature during regeneration.  
 
 Once the desired temperature is set, simply leave the device alone and it will return to operations mode (this takes a while)  
 The pressure in the system will slowly rise (as is expected when the gas+water+oxygen gets hotter)
