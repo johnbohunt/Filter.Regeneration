@@ -7,24 +7,25 @@ Liquid Argon Filter Regeneration Process
 4. [Attach the Argon/Hydrogen Tanks and Vents](https://github.com/johnbohunt/Filter.Regeneration/tree/main/John#attach-arh-tanks-and-vents-1)  
 5. [Regenerate the Filters](https://github.com/johnbohunt/Filter.Regeneration/tree/main/John#regenerating-the-filters)    
   
-## Warnings  
+## Warnings/Quick Rundown  
 ### Evacuating the Vessel
 The "bleed in valve" is a percision valve should be handled very delicately and will need to be turned several times to open and close it all the way  
 When the screw is all the way at the bottom the valve is CLOSED  
 When the screw is at the top the valve is all the way OPEN  
-Ensure all valves are closed when starting the pump with the exception of those outlined  
+Ensure all valves are closed when starting the pump   
 Avoid opening the system to outside pressure. Carefully check and double check when you are opening up valves to evacuate the vessel  
-### Running the Heater Tape   
+### Heater Tape   
 When attaching the tape, the tape should not be overlapping at any point  
 The thermocouple regulator must be installed inbetween the heater tape and the steel  
 The temperature can be set on the current regulator. The limit should be no higher than 225&deg;C  
 The tape is rated for a maximum of 232&deg;C.  
 Take care to make sure it doesn't sustain higher temperatures for a significant length of time during regeneration.  
-Ventilate the fumes that come off of the heater tape.  
-### Turbo Evactuating System  
+Ventilate any fumes that may come off of the heater tape.  
+### Turbo Pump    
 The turbo runs at very high rpm. If the system were to suddenly be exposed to high pressure (atmosphere) or be shaken there is a risk that the vacuum could fail catastrophically (blow up)  
 Take special care not to disturb the vacuum too much when the turbo is on and be extra careful not to accidentally open a valve that you shouldn’t  
 When in doubt, turn the turbo off, wait till the blades spin all the way down, then perform whatever task you need to do  
+### Ion Gauge  
 You NEVER want to operate the Ion Gauge if the pressure in the system is above 5 mTorr  
 The ion gauge SHOULD NOT be left on for long periods of time (e.g. > 1 hour) as it will destroy the gauge
 The goal is to run the turbo until the system achieves at least $10^{-5}$ torr  
@@ -32,36 +33,32 @@ The goal is to run the turbo until the system achieves at least $10^{-5}$ torr
 - 9.0 $10^{-5}$ torr is fine  
 - 2.0 $10^{-5}$ torr is better  
 - $10^{-6}$ torr is best 
-
-This can take up to 6 hours if the system hasn’t been pumped down for a while.  
-It is ok to leave the system unattended while it pumps  
-Be sure to turn the ion gauge off  
-Press the menu button  
-Use the arrows to select “IG off”  
-Press enter  
-### Attach Ar/H Tanks and Vents  
+  
+Be sure to turn the ion gauge off if left unattended    
+- Press the menu button  
+- Use the arrows to select “IG off”  
+- Press enter  
+  
+### Ar/H Tanks    
 **IMPORTANT: THE Ar/H BOTTLE MUST BE ATTACHED TO EITHER THE WALL, THE BOTTLE CART, OR SOME OTHER STURDY STRUCTURE TO PREVENT THE BOTTLE FROM FALLING OVER. NEVER USE A BOTTLE UNLESS IT IS ANCHORED!!!**  
 The threads on this adapter to the bottle are “left handed” threads. This means that you rotate counterclockwise to tighten and clockwise to loosen (opposite of normal)  
 Be Careful not to strip the threads, brass can deform very easily  
 These hoses are VCR ¼ inch hoses and need VCR ¼ inch gaskets (small metal disks) at the joints and to be tightened very well.  
 You will not want to leave the system closed for long (> 30 mins) with the heater tapes on and the system isolated like this  
+### Regeneration Process  
 Only turn on the RGA if the pressure reads < $10^{-4}$ torr on the ion gauge  
-### Starting the Regeneration Process
-When starting the regeneration process, you will want to be sure the valve which allows the Ar/H to flow into the system to be open  
-This pressure should be below 700 torr  
-Pressure near the filter between 400 - 700 Torr (500 torr is ideal)  
-Pressure near the turbo pump below $10^{-4}$ Torr (somewhere around $10^{-5}$ Torr is ideal)  
+Be sure the valve which allows the Ar/H to flow into the system (V6) is open   
 The Ar/H flow rate between 10 and 30 CFH (20 - 25 CFH is ideal)  
 The goal is to get the water level to ~ $10^{-6}$  
 Oxygen should stay below $10^{-6}$
 ### Steps to end the run
-Shut off the Ar/H (close the regulator)  
-Close the Ar/H bottle  
+Shut off the Ar/H (close the regulator: V7)    
+Close the Ar/H bottle (V8)  
 Close the rig to the outside world  
-stop run and turn off filament   
-isolate the RGA from the system  
-turn off the heater tapes (unplug them)  
-Open the Ar/H (open the regulator)  
+Stop run and turn off RGA filament   
+Isolate the RGA from the system  
+Turn off the heater tapes (unplug them or switch off power strip)  
+Open the Ar/H (open the regulator: V7)  
 Letting the pressure in the system pump out  
 Turn off the ion gauge  
 Shut off the system   
@@ -80,8 +77,8 @@ There are two vacuum pumps we use to evacuate the system
 - Roughing Pump  
 ![Roughing Pump](https://github.com/johnbohunt/Filter.Regeneration/blob/main/John/images/Roughing%20pump.jpg?raw=true)
 
-These two pumps shouldn't be used on the same volume at the same time, i.e. we want to avoid the two pumps pulling opposite ways on the same section of pipe. Our current system runs the pumps inline, with the roughing pump extracting the "exhaust" of the turbo pump when the turbo is running. This is fine since the two pumps aren't acting against each other on the same volume. However, if both pumps are running and V5 and V6 on the valve diagram are both open, they WILL be pulling against each other, which will heat the system and risk damaging the pumps. This is the sort of thing we want to avoid.  
-_!add diagram for clarity_  
+These two pumps shouldn't be used on the same volume at the same time, i.e. we want to avoid the two pumps pulling opposite ways on the same section of pipe. Our current system runs the pumps inline, with the roughing pump extracting the "exhaust" of the turbo pump when the turbo is running. This is fine since the two pumps aren't acting against each other on the same volume. However, if both pumps are running and V2 and V3 on the valve diagram are both open, they WILL be pulling against each other, which will heat the system and risk damaging the pumps. This is the sort of thing we want to avoid.  
+[Pump Dos and Donts](pump dos and donts)    
 Connect the Filter system to the roughing pump if not connected  
 Should already be connected as shown in photo  
 <img src="https://github.com/johnbohunt/Filter.Regeneration/blob/main/John/images/IMG_4814.png?raw=true" width=400>  
@@ -91,13 +88,12 @@ Make sure any other systems hooked up are closed off as well (e.g. the selenium 
 The valve labeled SV1 (refer to valve diagram below) is a precision valve and should be handled VERY DELICATELY  
 ![Valve Diagram](https://github.com/johnbohunt/Filter.Regeneration/blob/main/Alfredo/Images/Diagram.png?raw=true)  
 Make sure this valve is also closed before pumping  
-You will have to turn this valve quite a few times to close it all the way  
-Make sure that “023 Motor Pump” is set to the “off” configuration.  
-Make sure that the blade speed reads at “0” Hz  
-Begin with every non specified valve on the filter rig in the CLOSED position  
+You will have to turn this valve quite a few times to close it all the way    
+Begin with every valve on the filter rig in the CLOSED position  
 Turn on the roughing pump _!specify procedure_  
 Note, You DO NOT want to accidentally open the system to the outside atmosphere!!!! Please check and double check what you are about to do at these steps!  
-Slowly open up valves in order of nearest to furthest from roughing pump, waiting for the system pressure to drop to 2-10 torr.
+Slowly open up valves in order of nearest to furthest from roughing pump, waiting for the system pressure to drop to 2-10 torr.  
+![Valve Opening Order](placeholder)  
 
 ---
 ### Run the Heater Tape  
@@ -140,12 +136,14 @@ Note: There may only be one heater tape in use, so there may only be one regulat
 The system needs to be at least 175&deg;C to regenerate.  
 However, we want to avoid sustained temperatures higher than 225&deg;C.  
 This is for both the catalyst and the tape.  
-- The catalyst is rated for sustained temperatures of 225&deg;C.
+- The copper catalyst is rated for sustained temperatures of 225&deg;C.
   - It's also rated for peaks up to 300&deg;C as long as those temperatures aren't sustained.
-  - Please refer to the [copper catalyst guidelines](https://github.com/johnbohunt/Filter.Regeneration/blob/main/Alfredo/Filter.Guidelines/Reduction%20Guidelines%20for%20Copper%20Catalysts.pdf) for more info.  
+  - Please refer to the [copper catalyst guidelines](https://github.com/johnbohunt/Filter.Regeneration/blob/main/Alfredo/Filter.Guidelines/Reduction%20Guidelines%20for%20Copper%20Catalysts.pdf) for more info.
+- The molecular sieve/TSA bed is rated for sustained temperatures of up to 300&deg;C.
+  - This is only if it's heated and cooled slowly (<100&deg;C/hr)
+  - Please refer to the [molecular sieve guidelines](https://github.com/johnbohunt/Filter.Regeneration/blob/main/Alfredo/Filter.Guidelines/Regeneration%20Guidelines%20for%20TSA%20Beds.pdf) for more info.  
 - The tape is rated for a maximum exposure of 232&deg;C.
-  - It tends to get a bit hotter than the temperature it's set to at maximum.
- 
+  - It tends to get a bit hotter than the temperature it's set to at maximum.   
 
 Therefore, it's recommended to set the tape no higher than 225&deg;C during the initial "bake out" process and lower the temperature during regeneration.  
 
@@ -161,30 +159,18 @@ __No one should touch these heater tapes since they can get quite hot__
 ---
 ### Turbo Evacuate the System  
 #### Time to Complete: 1-4 Hours  
-```
-Since the this step and the next step will be where we actually start regenerating the filters,  
-we will want to move the system to the location where it can vent the Argon/Hydrogen mixture out of the building  
-We will move the system before turning on the turbo pump  
-and the system SHOULD NOT BE MOVED WHEN THE TURBO PUMP IS OPERATING  
-The first step is to unplug the heater tapes (this is how you turn them off)  
-Then close the valve to the roughing pump  
-Turn off the roughing pump  
-Press and hold the red button on the roughing pump  
-Disconnect the KF 25 hose from the roughing pump  
-Note: You will hear a sound as the vacuum is broken in the hose  
-Now move the purification skid to wherever you will be doing the regeneration  
-Near the vent tubes in the lab is preferred  
-```
-_!Does the system still need to be disconnected and moved? It's set up in a place where it can ventilate currently_  
-Ensure the system is below 20 mtorr before turning on the Turbo pump. The blades are delicate and will be damaged if operated outside of a near vaccum.    
+Ensure the system is below 20 mtorr before turning on the Turbo pump.  
+The blades are delicate and will be damaged if operated outside of a near vaccum.    
 The Turbo Pump is controlled by an independent voltage source. Flip the switch to turn on the pump.  
 You should hear a “whirring” sound as the blades spin up to 1500 Hz and takes ~3 mins to come all the way up to speed  
-Note: There are now blades spinning around 1500 times per second!  
-If the system were to suddenly be exposed to high pressure (atmosphere) or be shooken there is a risk that the vacuum could fail catastrophically (blow up)  
+
+- Note: There are now blades spinning around 1500 times per second!  
+If the system were to suddenly be exposed to high pressure (atmosphere) or be shaken there is a risk that the vacuum could fail catastrophically (blow up)  
 Take special care not to disturb the vacuum too much when the turbo is on and be extra careful not to accidentally open a valve that you shouldn’t  
 When in doubt, turn the turbo off, wait till the blades spin all the way down, then perform whatever task you need to do  
-Once the vacuum gauge nearest the turbo reads ~3 milliTorr (mTorr) you have reached the limit of that gauge’s sensitivity  
-To monitor further you will need to use the ion gauge (IG) which is mounted on top of the turbo station   
+
+Once the vacuum gauge nearest the turbo reads ~3 milliTorr (mTorr), you have reached the limit of that gauge’s sensitivity  
+To monitor further, you will need to use the ion gauge (IG) which is mounted on top of the turbo station   
 #### Using the Ion Gauge  
 Note: You NEVER want to operate the Ion Gauge if the pressure in the system is above 5 mTorr  
 The ion gauge SHOULD NOT be left on for long periods of time (e.g. > 1 hour) as it will destroy the gauge  
@@ -253,7 +239,7 @@ Both the stinger gauges should be reading low mTorr levels
 Numbers need to be established based on more experience  
 Ion Gauge for the full system should read close to $10^{-5}$ Torr  
 [Using the Ion Gauge](https://github.com/johnbohunt/Filter.Regeneration/blob/main/John/README.md#using-the-ion-gauge)    
-You will want to close the “bleed in valve” which separates the turbo pump from the filters (this should cause the pressure to drop very quickly)  
+You will want to close the “bleed in valve” (SV1) which separates the turbo pump from the filters (this should cause the pressure to drop very quickly)  
 Next you will want to plug in the heater tapes for the filter material  
 You will not want to leave the system closed for long (> 30 mins) with the heater tapes on and the system isolated like this...so we will be moving fast through the next steps!  
 You will want to monitor the pressure gauge near the filters throughout the process  
@@ -343,9 +329,10 @@ What do we do if this is out of spec?
 What you should see on the RGA:  
 ![RGA Looks Like](https://github.com/johnbohunt/Filter.Regeneration/blob/main/John/images/rga%20regen%202.png?raw=true)  
 
-##### Temperature
-_!We're expecting a temperature spike when adding the Hydrogen/Argon mixture. It's likely this will need to be balanced as well._  
-The temperature needs to be at least 175&deg;C and shouldn't exceed 225&deg;C. Note that spikes as high as 300&deg;C are okay as long as the temperature is maintained below 225&deg;C. Refer to the Copper Catalyst reduction guidline [here](https://github.com/johnbohunt/Filter.Regeneration/blob/8888a869bf07075ab53d143642b467c4da9cf445/Alfredo/Filter.Guidelines/Reduction%20Guidelines%20for%20Copper%20Catalysts.pdf) for more details.  
+##### Temperature     
+The temperature needs to be at least 175&deg;C and shouldn't exceed 225&deg;C. Note that spikes as high as 300&deg;C are okay as long as the temperature is maintained below 225&deg;C.  
+What do we do if this is out of spec?  
+- 
 #### Waiting Game  
 Now we will let the filter regeneration happen!  
 We will want to monitor this closely over the first 2-3 hours and then less frequently later  
