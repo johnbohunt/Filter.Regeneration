@@ -8,6 +8,8 @@ Liquid Argon Filter Regeneration Process
 5. [Regenerate the Filters](https://github.com/johnbohunt/Filter.Regeneration/tree/main/John#regenerating-the-filters)    
   
 ## Warnings/Quick Rundown  
+### Valve Diagram  
+![Valve Diagram](https://github.com/johnbohunt/Filter.Regeneration/blob/main/John/images/valve%20diagram%202.1.png)   
 ### Evacuating the Vessel
 The "bleed in valve" is a percision valve should be handled very delicately and will need to be turned several times to open and close it all the way  
 When the screw is all the way at the bottom the valve is CLOSED  
@@ -78,22 +80,21 @@ There are two vacuum pumps we use to evacuate the system
 ![Roughing Pump](https://github.com/johnbohunt/Filter.Regeneration/blob/main/John/images/Roughing%20pump.jpg?raw=true)
 
 These two pumps shouldn't be used on the same volume at the same time, i.e. we want to avoid the two pumps pulling opposite ways on the same section of pipe. Our current system runs the pumps inline, with the roughing pump extracting the "exhaust" of the turbo pump when the turbo is running. This is fine since the two pumps aren't acting against each other on the same volume. However, if both pumps are running and V2 and V3 on the valve diagram are both open, they WILL be pulling against each other, which will heat the system and risk damaging the pumps. This is the sort of thing we want to avoid.  
-[Pump Dos and Donts](pump dos and donts)    
+![Pump Dos and Donts](https://github.com/johnbohunt/Filter.Regeneration/blob/main/John/images/pump%20dos%20and%20donts.png)      
 Connect the Filter system to the roughing pump if not connected  
-Should already be connected as shown in photo  
+Should be connected as shown below  
 <img src="https://github.com/johnbohunt/Filter.Regeneration/blob/main/John/images/IMG_4814.png?raw=true" width=400>  
-At the time of writing, they can be connected via Kwik Flange (KF) 25 hose _!verify_    
-Close the valve nearest the roughing pump to isolate the roughing pump from everything else  
+At the time of writing, they can be connected via Kwik Flange (KF) 25 hose    
+Close the valve nearest the roughing pump (V1) to isolate the roughing pump from everything else  
 Make sure any other systems hooked up are closed off as well (e.g. the selenium evaporator needs to be closed off here)  
-The valve labeled SV1 (refer to valve diagram below) is a precision valve and should be handled VERY DELICATELY  
-![Valve Diagram](https://github.com/johnbohunt/Filter.Regeneration/blob/main/Alfredo/Images/Diagram.png?raw=true)  
+The valve labeled SV1 (refer to valve diagram above) is a precision valve and should be handled VERY DELICATELY   
 Make sure this valve is also closed before pumping  
 You will have to turn this valve quite a few times to close it all the way    
 Begin with every valve on the filter rig in the CLOSED position  
 Turn on the roughing pump _!specify procedure_  
 Note, You DO NOT want to accidentally open the system to the outside atmosphere!!!! Please check and double check what you are about to do at these steps!  
 Slowly open up valves in order of nearest to furthest from roughing pump, waiting for the system pressure to drop to 2-10 torr.  
-![Valve Opening Order](placeholder)  
+![Valve Opening Order](https://github.com/johnbohunt/Filter.Regeneration/blob/main/John/images/Valve%20opening%20order.png)  
 
 ---
 ### Run the Heater Tape  
@@ -115,7 +116,7 @@ The Thermocouple (thing that measures the temperature) needs to be installed bet
 ![Tape Thermocouple](https://github.com/johnbohunt/Filter.Regeneration/blob/main/John/images/thermocouple%20cable%202.jpg?raw=true)  
 There should be some form of insulation covering the tape. Currently, we are using a hard material that is wrapped in a one-sided reflective foil, but fiberglass and aluminum foil have been used in the past.  
 <img src="https://github.com/johnbohunt/Filter.Regeneration/blob/main/John/images/IMG_4893.JPG?raw=true" width=400>   
-__Make sure to ventilate the top of the filter.__ When the tape gets hot, some coating or adhesive it has burns off and forms smoke. In the future, we'd like this to go away, but for now, proper ventilation helps a lot.  
+__Make sure to ventilate the top of the filter.__ When the tape gets hot, sometimes a coating or adhesive it has burns off and forms smoke. In the future, we'd like this to go away, but for now, proper ventilation helps a lot.  
 <img src="https://github.com/johnbohunt/Filter.Regeneration/blob/main/John/images/IMG_4895.JPG?raw=true" width=400>  
 Plug both cables from the current regulators with the thermocouples into the power strip on the filter skid. We currently have this set up so the regulators plug into a seperate power strip which we can use to switch them on and off to more easily control the power. Otherwise, the tape will start heating as soon as it's plugged in.  
 ![Regulator Cable](https://github.com/johnbohunt/Filter.Regeneration/blob/main/John/images/current%20regulator%20cables.jpg?raw=true)  
@@ -160,7 +161,9 @@ __No one should touch these heater tapes since they can get quite hot__
 ### Turbo Evacuate the System  
 #### Time to Complete: 1-4 Hours  
 Ensure the system is below 20 mtorr before turning on the Turbo pump.  
-The blades are delicate and will be damaged if operated outside of a near vaccum.    
+The blades are delicate and will be damaged if operated outside of a near vaccum.  
+Close valve V3 before turning on the turbo pump.  
+![Valve diagram turbo pump](https://github.com/johnbohunt/Filter.Regeneration/blob/main/John/images/valve%20diagram%20turb%20pump%202.1.png)  
 The Turbo Pump is controlled by an independent voltage source. Flip the switch to turn on the pump.  
 You should hear a “whirring” sound as the blades spin up to 1500 Hz and takes ~3 mins to come all the way up to speed  
 
@@ -303,6 +306,8 @@ Once stable flow is established, we will want to flow in a small amount of Ar/H 
 You can SLOWLY OPEN the bleed in valve monitoring the pressure on the ion gauge  
 __THE PRESSURE ON THE ION GAUGE SHOULD STAY ~ $10^{-5}$ TORR__  
 ___NEVER GO ABOVE_ $10^{-4}$ TORR__  
+The system should look like this during regeneration:  
+![Valves regen](https://github.com/johnbohunt/Filter.Regeneration/blob/main/John/images/Valve%20diagram%20regen.png)  
 #### A Balancing Act
 What you will do now is a balancing act to get the flow rate of Ar/H into the system well matched to the venting valve and the flow into the RGA   
 This typically takes 1 hour of tweaking, letting things run, and tweaking again  
@@ -329,10 +334,10 @@ What do we do if this is out of spec?
 What you should see on the RGA:  
 ![RGA Looks Like](https://github.com/johnbohunt/Filter.Regeneration/blob/main/John/images/rga%20regen%202.png?raw=true)  
 
-##### Temperature     
+##### Temperature  
 The temperature needs to be at least 175&deg;C and shouldn't exceed 225&deg;C. Note that spikes as high as 300&deg;C are okay as long as the temperature is maintained below 225&deg;C.  
 What do we do if this is out of spec?  
-- 
+ 
 #### Waiting Game  
 Now we will let the filter regeneration happen!  
 We will want to monitor this closely over the first 2-3 hours and then less frequently later  
