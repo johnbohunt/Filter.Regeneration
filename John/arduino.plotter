@@ -1,0 +1,46 @@
+import serial
+import matplotlib.pyplot as plt
+
+# Configure the serial port
+arduino_port = '/dev/ttyUSB0'  # Replace with the appropriate port
+baud_rate = 9600
+ser = serial.Serial(arduino_port, baud_rate)
+
+# Initialize lists to store data
+x_data = []
+y_data = []
+
+# Set up the plot
+plt.ion()  # Enable interactive mode
+fig, ax = plt.subplots()
+line, = ax.plot(x_data, y_data)
+
+# Main loop
+try:
+    while True:
+        # Read data from serial port
+        data = ser.readline().decode().rstrip()  # Assumes text-based data
+        
+        # Process the data
+        # Modify this section based on the format of your Arduino's output
+        
+        # Example: data is a comma-separated pair of values (x, y)
+        x, y = map(float, data.split(','))
+        
+        # Update the data lists
+        x_data.append(x)
+        y_data.append(y)
+        
+        # Update the plot
+        line.set_xdata(x_data)
+        line.set_ydata(y_data)
+        ax.relim()  # Recalculate limits
+        ax.autoscale_view()  # Autoscale the view
+        
+        # Refresh the plot
+        plt.draw()
+        plt.pause(0.001)  # Delay for a short period (in seconds)
+        
+except KeyboardInterrupt:
+    # Close the serial connection
+    ser.close()
