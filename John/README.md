@@ -56,19 +56,17 @@ The Ar/H flow rate between 10 and 30 CFH (20 - 25 CFH is ideal)
 The goal is to get the water level to ~ $10^{-6}$  
 Oxygen should stay below $10^{-6}$
 ### Steps to end the run
-Shut off the Ar/H (close the regulator: V7)    
-Close the Ar/H bottle (V8)  
-Close the rig to the outside world  
-Stop run and turn off RGA filament   
-Isolate the RGA from the system  
-Turn off the heater tapes (unplug them or switch off power strip)  
-Open the Ar/H (open the regulator: V7)  
-Letting the pressure in the system pump out  
-Turn off the ion gauge  
-Shut off the system   
-Turn off the Motor pump  
-Turn off the RGA  
-Shut off the Pumping Station  
+1. Close the Ar/H bottle (V9)  
+2. Let the pressure in the system pump out  
+3. Shut off the Ar/H (close the regulator: V8)    
+4. Close the rig to the outside world  
+5. Stop run and turn off RGA filament   
+6. Isolate the RGA from the system (close SV1)  
+7. Turn off the RGA  
+8. Turn off the heater tapes (unplug them or switch off power strip)    
+9. Turn off the ion gauge  
+10. Shut off the turbo pump  
+11. After the turbo has spun down, the roughing pump can be shut off.  
   
   ---
 ## Instructions  
@@ -90,7 +88,8 @@ They can be connected via Kwik Flange (KF) 25 hose
 Close the valve nearest the roughing pump (V1) to isolate the roughing pump from everything else  
 Make sure any other systems hooked up are closed off as well  
 The valve labeled SV1 (refer to valve diagram above) is a precision valve and should be handled VERY DELICATELY   
-Make sure this valve is also closed before pumping (we will only open this when needed)  
+Make sure this valve is also closed before pumping  
+- This is only used to flow a tiny amount of gas, and we don't want to pull vacuum or flow the full volume of gas through it.  
 You will have to turn this valve quite a few times to close it all the way    
 Begin with every valve on the filter rig in the CLOSED position  
 Turn on the roughing pump using the green "on" button on the side    
@@ -166,7 +165,12 @@ Ensure the system is below 20 mtorr before turning on the Turbo pump.
 The blades are delicate and will be damaged if operated outside of a near vaccum.  
 Close valve V3 before turning on the turbo pump.  
 ![Valve diagram turbo pump](https://github.com/johnbohunt/Filter.Regeneration/blob/main/John/images/valve%20diagram%20turb%20pump%202.1.png)  
-The Turbo Pump is controlled by an independent voltage source. Flip the switch to turn on the pump.  
+The Turbo Pump is controlled by an independent voltage source.  
+_Picture of the power supply for the turbo_  
+Make sure it's wired correctly before turning it on.  
+_Picture of the correct wiring_  
+Currently, we have an improvised method to turn on the system. Short these two wires to start the turbo.  
+_the two damn wires we need to put a switch on_  
 You should hear a “whirring” sound as the blades spin up to 1500 Hz and takes ~3 mins to come all the way up to speed  
 
 - Note: There are now blades spinning around 1500 times per second!  
@@ -353,16 +357,14 @@ Oxygen should stay below $10^{-6}$
 ![Completed Regen](https://github.com/johnbohunt/Filter.Regeneration/blob/main/John/images/rga%20regen%203.png?raw=true)    
 This regeneration was allowed to run for almost 24 hours from the start and we can start to see very low levels of water and oxygen!  
 #### Steps to end the run
-1. Shut off the Ar/H (close the regulator)  
-2. Close the Ar/H bottle  
-3. Close the rig to the outside world  
-4. Stop run and turn off filament  
-5. Isolate the RGA from the system  
-6. Turn off the heater tapes (unplug them)  
-7. Open the Ar/H (open the regulator)  
-8. Letting the pressure in the system pump out  
+1. Close the Ar/H bottle (V9)  
+2. Let the pressure in the system pump out  
+3. Shut off the Ar/H (close the regulator: V8)    
+4. Close the rig to the outside world  
+5. Stop run and turn off RGA filament   
+6. Isolate the RGA from the system (close SV1)  
+7. Turn off the RGA  
+8. Turn off the heater tapes (unplug them or switch off power strip)    
 9. Turn off the ion gauge  
-10. Shut off the system   
-11. Turn off the Motor pump  
-12. Turn off the RGA  
-13. Shut off the Pumping Station  
+10. Shut off the turbo pump  
+11. After the turbo has spun down, the roughing pump can be shut off.  
