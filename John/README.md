@@ -8,6 +8,8 @@ Liquid Argon Filter Regeneration Process
 5. [Regenerate the Filters](https://github.com/johnbohunt/Filter.Regeneration/tree/main/John#regenerating-the-filters)    
   
 ## Warnings/Quick Rundown  
+Note: This guide is written to explain the necessary steps in detail. There are many steps that will be clear to those familiar with vacuum systems, but there are processes unique to this system among them. Please read this document thoroughly before attempting any purification procedres.  
+(TLDR; don't skip anything if you feel like you got the gist of it!)   
 ### Valve Diagram  
 ![Valve Diagram](https://github.com/johnbohunt/Filter.Regeneration/blob/main/John/images/valve%20diagram%202.1.png)   
 ### Evacuating the Vessel
@@ -32,8 +34,8 @@ You NEVER want to operate the Ion Gauge if the pressure in the system is above 5
 The ion gauge SHOULD NOT be left on for long periods of time (e.g. > 1 hour) as it will destroy the gauge
 The goal is to run the turbo until the system achieves at least $10^{-5}$ torr  
   
-- 9.0 $10^{-5}$ torr is fine  
-- 2.0 $10^{-5}$ torr is better  
+- 9.0 * $10^{-5}$ torr is fine  
+- 2.0 * $10^{-5}$ torr is better  
 - $10^{-6}$ torr is best 
   
 Be sure to turn the ion gauge off if left unattended    
@@ -84,16 +86,16 @@ These two pumps shouldn't be used on the same volume at the same time, i.e. we w
 Connect the Filter system to the roughing pump if not connected  
 Should be connected as shown below  
 <img src="https://github.com/johnbohunt/Filter.Regeneration/blob/main/John/images/IMG_4814.png?raw=true" width=400>  
-At the time of writing, they can be connected via Kwik Flange (KF) 25 hose    
+They can be connected via Kwik Flange (KF) 25 hose    
 Close the valve nearest the roughing pump (V1) to isolate the roughing pump from everything else  
-Make sure any other systems hooked up are closed off as well (e.g. the selenium evaporator needs to be closed off here)  
+Make sure any other systems hooked up are closed off as well  
 The valve labeled SV1 (refer to valve diagram above) is a precision valve and should be handled VERY DELICATELY   
-Make sure this valve is also closed before pumping  
+Make sure this valve is also closed before pumping (we will only open this when needed)  
 You will have to turn this valve quite a few times to close it all the way    
 Begin with every valve on the filter rig in the CLOSED position  
-Turn on the roughing pump _!specify procedure_  
-Note, You DO NOT want to accidentally open the system to the outside atmosphere!!!! Please check and double check what you are about to do at these steps!  
-Slowly open up valves in order of nearest to furthest from roughing pump, waiting for the system pressure to drop to 2-10 torr.  
+Turn on the roughing pump using the green "on" button on the side    
+Note, You DO NOT want to accidentally open the system to the outside atmosphere!!!! (eg. running the roughing pump in reverse) Please check and double check what you are about to do at these steps!  
+Slowly open up valves in order of nearest to furthest from roughing pump, waiting for the system pressure to drop to 2 * $10^{-5}$ torr.  
 ![Valve Opening Order](https://github.com/johnbohunt/Filter.Regeneration/blob/main/John/images/Valve%20opening%20order.png)  
 
 ---
@@ -206,11 +208,12 @@ __IMPORTANT: THE Ar/H BOTTLE MUST BE ATTACHED TO EITHER THE WALL, THE BOTTLE CAR
 There is an adapter which allows the connection between the two and needs to be installed prior to attaching (if it is not already there)
 - Note: The threads on this adapter to the bottle are “left handed” threads. This means that you rotate counterclockwise to tighten and clockwise to loosen (opposite of normal)  
 
-Be Careful not to strip the threads, brass can deform very easily  
+Be careful not to strip the threads, brass can deform very easily  
 The Ar/H hose connects to the port shown in the picture which is closest to the Copper filters  
 Note: These hoses are VCR ¼ inch hoses and need VCR ¼ inch gaskets (small metal disks) at the joints and to be tightened very well.  
 The other end should be securely fastened to the exhaust vent  
 This is typically done with a combination of foam/tape/strain relief for the hose  
+Make sure to pull vacuum on the connection (with the bottle closed) before running gas.  
 
 Now all that is needed is to connect the Residual Gas Analyzer (RGA) to the Windows computer station  
 <img src="https://github.com/johnbohunt/Filter.Regeneration/blob/main/John/images/IMG_4816.png?raw=true" width=400>  
@@ -218,8 +221,7 @@ The RGA is connected via a USB cable coming out of the back of the RGA
 <img src="https://github.com/johnbohunt/Filter.Regeneration/blob/main/John/images/IMG_4824.png?raw=true" width=400><img src="https://github.com/johnbohunt/Filter.Regeneration/blob/main/John/images/IMG_4825.png?raw=true" width=400>  
 The computer is very small. The power button is on the right side  
 <img src="https://github.com/johnbohunt/Filter.Regeneration/blob/main/John/images/IMG_4807.png?raw=true" width=400>  
-The username and password should be attached to the monitor  
-_!Can I put a photo of username and password? Is that a security issue?_   
+The username and password should be attached to the monitor     
 
 ---
 ### Regenerating the filters
