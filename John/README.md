@@ -91,6 +91,7 @@ The valve labeled SV1 (refer to valve diagram above) is a precision valve and sh
 Make sure this valve is also closed before pumping  
 - This is only used to flow a tiny amount of gas, and we don't want to pull vacuum or flow the full volume of gas through it.  
 You will have to turn this valve quite a few times to close it all the way    
+
 Begin with every valve on the filter rig in the CLOSED position  
 Turn on the roughing pump using the green "on" button on the side    
 Note, You DO NOT want to accidentally open the system to the outside atmosphere!!!! (eg. running the roughing pump in reverse) Please check and double check what you are about to do at these steps!  
@@ -117,8 +118,6 @@ The Thermocouple (thing that measures the temperature) needs to be installed bet
 ![Tape Thermocouple](https://github.com/johnbohunt/Filter.Regeneration/blob/main/John/images/thermocouple%20cable%202.jpg?raw=true)  
 There should be some form of insulation covering the tape. Currently, we are using a hard material that is wrapped in a one-sided reflective foil, but fiberglass and aluminum foil have been used in the past.  
 <img src="https://github.com/johnbohunt/Filter.Regeneration/blob/main/John/images/IMG_4893.JPG?raw=true" width=400>   
-__Make sure to ventilate the top of the filter.__ When the tape gets hot, sometimes a coating or adhesive it has burns off and forms smoke. In the future, we'd like this to go away, but for now, proper ventilation helps a lot.  
-<img src="https://github.com/johnbohunt/Filter.Regeneration/blob/main/John/images/IMG_4895.JPG?raw=true" width=400>  
 Plug both cables from the current regulators with the thermocouples into the power strip on the filter skid. We currently have this set up so the regulators plug into a seperate power strip which we can use to switch them on and off to more easily control the power. Otherwise, the tape will start heating as soon as it's plugged in.  
 ![Regulator Cable](https://github.com/johnbohunt/Filter.Regeneration/blob/main/John/images/current%20regulator%20cables.jpg?raw=true)  
 If everything is setup, the screens on the current regulators will look like the ones shown here  
@@ -169,8 +168,9 @@ The Turbo Pump is controlled by an independent voltage source.
 _Picture of the power supply for the turbo_  
 Make sure it's wired correctly before turning it on.  
 _Picture of the correct wiring_  
-Currently, we have an improvised method to turn on the system. Short these two wires to start the turbo.  
-_the two damn wires we need to put a switch on_  
+You can turn on the turbo pump by turning on the voltage source and flipping this switch.  
+Double check the system is below 20 mtorr, then start the turbo pump.  
+_Picture of the switch_  
 You should hear a “whirring” sound as the blades spin up to 1500 Hz and takes ~3 mins to come all the way up to speed  
 
 - Note: There are now blades spinning around 1500 times per second!  
