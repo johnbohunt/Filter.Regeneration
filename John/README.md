@@ -9,11 +9,11 @@ Liquid Argon Filter Regeneration Process
   
 ## Warnings/Quick Rundown  
 Note: This guide is written to explain the necessary steps in detail. There are many steps that will be clear to those familiar with vacuum systems, but there are processes unique to this system among them. Please read this document thoroughly before attempting any purification procedres.  
-(TLDR; don't skip anything if you feel like you got the gist of it!)   
+(TLDR; don't skip anything the first time you read this!)   
 ### Valve Diagram  
 ![Valve Diagram](https://github.com/johnbohunt/Filter.Regeneration/blob/main/John/images/valve%20diagram%202.1.png)   
 ### Evacuating the Vessel
-The "bleed in valve" is a percision valve should be handled very delicately and will need to be turned several times to open and close it all the way  
+The "bleed in valve" is a precision valve should be handled very delicately and will need to be turned several times to open and close it all the way  
 When the screw is all the way at the bottom the valve is CLOSED  
 When the screw is at the top the valve is all the way OPEN  
 Ensure all valves are closed when starting the pump   
